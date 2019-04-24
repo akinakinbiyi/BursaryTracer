@@ -1,0 +1,15 @@
+﻿[
+  {
+    "Id": "1",
+    "Name": "College"
+  },
+  {
+    "Id": "2",
+    "Name": "Polytechnic"
+  },
+  {
+    "Id": "3",
+    "Name": "University"
+  }
+
+]
