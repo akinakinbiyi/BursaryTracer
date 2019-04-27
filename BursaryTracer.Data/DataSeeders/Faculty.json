@@ -1,0 +1,50 @@
+[
+    {
+        "Id":"1",
+        "Name":"Faculty of Agriculture"
+    },
+    {
+        "Id":"2",
+        "Name":"Faculty of Arts"
+    },
+    {
+        "Id":"3",
+        "Name":"Faculty of Medical Sciences"
+    }, 
+    {
+        "Id":"4",
+        "Name":"Faculty of Business Administration"
+    },
+    {
+        "Id":"5",
+        "Name":"Faculty of Education"
+    },
+    {
+        "Id":"6",
+        "Name":"Faculty of Social Sciences"
+    }, 
+    {
+        "Id":"7",
+        "Name":"Faculty of Engineering"
+    }, 
+    {
+        "Id":"8",
+        "Name":"Faculty of Science and Technology"
+    },
+    {
+        "Id":"9",
+        "Name":"Faculty of Law"
+    },
+    {
+        "Id":"10",
+        "Name":"Faculty of Veterinary Medicine"
+    },
+    {
+        "Id":"11",
+        "Name":"Faculty of Biological Sciences"
+    },
+    {
+        "Id":"12",
+        "Name":"Faculty of Pharmaceutical Sciences"
+    }
+]

@@ -1,0 +1,1276 @@
+[
+  {
+    "Id": 1,
+    "Name": "Abia State University",
+    "StateId": 1,
+    "Abbreviation": "ABSU",
+    "SchoolCategoryId": 3
+  },
+ {
+   "Id": 2,
+   "Name": "Gregory University",
+   "StateId": 1,
+   "Abbreviation": "",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 3,
+   "Name": "American University of Nigeria",
+   "StateId": 2,
+   "Abbreviation": "AUN",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 4,
+   "Name": "Adamawa State University",
+   "StateId": 2,
+   "Abbreviation": "ADSU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 5,
+   "Name": "Akwa Ibom State University",
+   "StateId": 3,
+   "Abbreviation": "AKSU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 6,
+   "Name": "Anambra State University",
+   "StateId": 4,
+   "Abbreviation": "ANSU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 7,
+   "Name": "Abubakar Tafawa Balewa University",
+   "StateId": 5,
+   "Abbreviation": "ATBU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 8,
+   "Name": "Benue State University",
+   "StateId": 7,
+   "Abbreviation": "BSU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 9,
+   "Name": "Cross River University of Technology",
+   "StateId": 9,
+   "Abbreviation": "CRUTECH",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 10,
+   "Name": "University of Calabar",
+   "StateId": 9,
+   "Abbreviation": "UNICAL",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 11,
+   "Name": "Delta State University, Abraka",
+   "StateId": 10,
+   "Abbreviation": "DELSU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 12,
+   "Name": "Michael and Cecilia Ibru University",
+   "StateId": 10,
+   "Abbreviation": "MCIU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 13,
+   "Name": "Ebonyi State University",
+   "StateId": 11,
+   "Abbreviation": "EBSU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 14,
+   "Name": "Evangel University, Akaeze",
+   "StateId": 11,
+   "Abbreviation": "EUA",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 15,
+   "Name": "Ambrose Alli University",
+   "StateId": 12,
+   "Abbreviation": "AAU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 16,
+   "Name": "Benson Idahosa University",
+   "StateId": 12,
+   "Abbreviation": "BIU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 17,
+   "Name": "Igbinedion University",
+   "StateId": 12,
+   "Abbreviation": "IUO",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 18,
+   "Name": "University of Benin",
+   "StateId": 12,
+   "Abbreviation": "UNIBEN",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 19,
+   "Name": "Afe Babalola University",
+   "StateId": 13,
+   "Abbreviation": "ABUAD",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 20,
+   "Name": "Crawford University",
+   "StateId": 13,
+   "Abbreviation": "CU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 21,
+   "Name": "Caritas University",
+   "StateId": 14,
+   "Abbreviation": "CU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 22,
+   "Name": "Godfrey Okoye University",
+   "StateId": 14,
+   "Abbreviation": "GOU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 23,
+   "Name": "University of Nigeria, Nsukka",
+   "StateId": 14,
+   "Abbreviation": "UNN",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 24,
+   "Name": "Ahmadu Bello University",
+   "StateId": 18,
+   "Abbreviation": "ABU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 25,
+   "Name": "City University of Technology",
+   "StateId": 18,
+   "Abbreviation": "CUT",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 26,
+   "Name": "Bayero University",
+   "StateId": 19,
+   "Abbreviation": "BUK",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 27,
+   "Name": "Federal University, Dutsin-Ma",
+   "StateId": 20,
+   "Abbreviation": "FUDM",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 28,
+   "Name": "Umaru Musa Yar'adua University Katsina",
+   "StateId": 20,
+   "Abbreviation": "UMYU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 29,
+   "Name": "Al-Hikmah University",
+   "StateId": 23,
+   "Abbreviation": "AHU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 30,
+   "Name": "University of Ilorin",
+   "StateId": 23,
+   "Abbreviation": "",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 31,
+   "Name": "Landmark University",
+   "StateId": 23,
+   "Abbreviation": "LU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 32,
+   "Name": "CETEP City University",
+   "StateId": 24,
+   "Abbreviation": "CU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 33,
+   "Name": "Caleb University",
+   "StateId": 24,
+   "Abbreviation": "CUl",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 34,
+   "Name": "City University",
+   "StateId": 24,
+   "Abbreviation": "CU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 35,
+   "Name": "National Open University of Nigeria",
+   "StateId": 24,
+   "Abbreviation": "NOUN",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 36,
+   "Name": "Lagos State University",
+   "StateId": 24,
+   "Abbreviation": "LASU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 37,
+   "Name": "University of Lagos",
+   "StateId": 24,
+   "Abbreviation": "UNILAG",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 38,
+   "Name": "ECWA Bingham University",
+   "StateId": 25,
+   "Abbreviation": "BU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 39,
+   "Name": "Federal University of Agriculture, Abeokuta",
+   "StateId": 27,
+   "Abbreviation": "FUNAAB",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 40,
+   "Name": "Babcock University",
+   "StateId": 27,
+   "Abbreviation": "BU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 41,
+   "Name": "Bells University of Technology",
+   "StateId": 27,
+   "Abbreviation": "BUT",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 42,
+   "Name": "Covenant University",
+   "StateId": 27,
+   "Abbreviation": "CU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 43,
+   "Name": "Crawford University",
+   "StateId": 27,
+   "Abbreviation": "CU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 44,
+   "Name": "Crescent University",
+   "StateId": 27,
+   "Abbreviation": "CU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 45,
+   "Name": "Olabisi Onabanjo University",
+   "StateId": 27,
+   "Abbreviation": "OOU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 46,
+   "Name": "Adekunle Ajasin University",
+   "StateId": 28,
+   "Abbreviation": "AAUA",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 47,
+   "Name": "Adekunle Ajasin University",
+   "StateId": 28,
+   "Abbreviation": "AAUA",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 48,
+   "Name": "Achievers University",
+   "StateId": 28,
+   "Abbreviation": "AC",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 49,
+   "Name": "Elizade University",
+   "StateId": 28,
+   "Abbreviation": "",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 50,
+   "Name": "Federal University of Technology Akure",
+   "StateId": 28,
+   "Abbreviation": "FUTA",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 51,
+   "Name": "Joseph Ayo Babalola University",
+   "StateId": 29,
+   "Abbreviation": "JABU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 52,
+   "Name": "Redeemer's University Nigeria",
+   "StateId": 29,
+   "Abbreviation": "RUN",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 53,
+   "Name": "Bowen University",
+   "StateId": 29,
+   "Abbreviation": "BU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 54,
+   "Name": "Fountain University, Osogbo",
+   "StateId": 29,
+   "Abbreviation": "FUO",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 55,
+   "Name": "Oduduwa University",
+   "StateId": 29,
+   "Abbreviation": "OUI",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 56,
+   "Name": "Obafemi Awolowo University",
+   "StateId": 29,
+   "Abbreviation": "OAU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 57,
+   "Name": "Ajayi Crowther University",
+   "StateId": 30,
+   "Abbreviation": "ACU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 58,
+   "Name": "Koladaisi University",
+   "StateId": 30,
+   "Abbreviation": "KU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 59,
+   "Name": "University of Ibadan",
+   "StateId": 30,
+   "Abbreviation": "UI",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 60,
+   "Name": "Universoty of Jos",
+   "StateId": 31,
+   "Abbreviation": "",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 61,
+   "Name": "University of Port Harcourt",
+   "StateId": 32,
+   "Abbreviation": "UNIPORT",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 62,
+   "Name": "Taraba State University",
+   "StateId": 34,
+   "Abbreviation": "",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 63,
+   "Name": "Bukar Abba Ibrahim University",
+   "StateId": 35,
+   "Abbreviation": "YSU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 64,
+   "Name": "Veritas University (Catholic University of Nigeria) Abuja",
+   "StateId": 37,
+   "Abbreviation": "VUNA",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 65,
+   "Name": "Nigerian Turkish Nile University",
+   "StateId": 37,
+   "Abbreviation": "NTNU",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 66,
+   "Name": "Federal University Ndufe Alike, Ikwo",
+   "StateId": 11,
+   "Abbreviation": "FUNAI",
+   "SchoolCategoryId": 3
+ },
+ {
+   "Id": 67,
+   "Name": "Dorben Polytechnic",
+   "StateId": 37,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 68,
+   "Name": "Adamawa State Polytechnic",
+   "StateId": 2,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 69,
+   "Name": "Federal Polytechnic, Mubi",
+   "StateId": 2,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 70,
+   "Name": "Akwa Ibom State Polytechnic",
+   "StateId": 3,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 71,
+   "Name": "Akwa-Ibom College of Agriculture",
+   "StateId": 3,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 72,
+   "Name": "Foundation College of Technology",
+   "StateId": 3,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 73,
+   "Name": "Heritage Polytechnic",
+   "StateId": 3,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 74,
+   "Name": "Maritime Academy of Nigeria",
+   "StateId": 3,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 75,
+   "Name": "Ekwenugo Okeke Polytechnic",
+   "StateId": 4,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 76,
+   "Name": "Federal Polytechnic, Oko",
+   "StateId": 4,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 77,
+   "Name": "The UA College of Science and Technology , Isuofia",
+   "StateId": 4,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 78,
+   "Name": "Abubakar Tafari Ali Polytechnic",
+   "StateId": 5,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 79,
+   "Name": "Federal Polytechnic, Bauchi",
+   "StateId": 5,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 80,
+   "Name": "Bayelsa State College of Arts and Science",
+   "StateId": 6,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 81,
+   "Name": "Federal Polytechnic Ekowe Bayelsa State",
+   "StateId": 6,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 82,
+   "Name": "Benue State Polytechnic",
+   "StateId": 7,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 83,
+   "Name": "Akperan Orshi College of Agriculture",
+   "StateId": 7,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 84,
+   "Name": "Borno College of Agriculture",
+   "StateId": 8,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 85,
+   "Name": "Ramat Polytechnic",
+   "StateId": 8,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 86,
+   "Name": "Ibrahim Babangida College of Agriculture",
+   "StateId": 9,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 87,
+   "Name": "The Polytechnic, Calabar",
+   "StateId": 9,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 88,
+   "Name": "Divine Polytechnic, Mkpani",
+   "StateId": 9,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 89,
+   "Name": "Delta State College of Agriculture",
+   "StateId": 9,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 90,
+   "Name": "Delta State Polytechnic�(three institutions)",
+   "StateId": 10,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 91,
+   "Name": "Petroleum Training Institute",
+   "StateId": 10,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 92,
+   "Name": "Akanu Ibiam Federal Polytechnic",
+   "StateId": 11,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 93,
+   "Name": "Federal College of Agriculture, Ishiagu",
+   "StateId": 11,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 94,
+   "Name": "Auchi Polytechnic",
+   "StateId": 12,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 95,
+   "Name": "Kings Polytechnic",
+   "StateId": 12,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 96,
+   "Name": "Shaka Polytechnic",
+   "StateId": 12,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 97,
+   "Name": "Federal Polytechnic, Ado-Ekiti",
+   "StateId": 13,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 98,
+   "Name": "Federal School of Dental Technology & Therapy",
+   "StateId": 14,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 99,
+   "Name": "Institute of Management Technology, Enugu",
+   "StateId": 14,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 100,
+   "Name": "Our Saviour Institute of Science and Technology",
+   "StateId": 14,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 101,
+   "Name": "Federal College of Land Resources Technology, Owerri",
+   "StateId": 16,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 102,
+   "Name": "Federal Polytechnic, Nekede",
+   "StateId": 16,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 103,
+   "Name": "Temple Gate Polytechnic",
+   "StateId": 1,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 104,
+   "Name": "Imo State Polytechnic",
+   "StateId": 16,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 105,
+   "Name": "Imo State Technological Skills Acquisition Center",
+   "StateId": 16,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 106,
+   "Name": "Hussaini Adamu Federal Polytechnic",
+   "StateId": 17,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 107,
+   "Name": "Hussani Adamu Polytechnic",
+   "StateId": 17,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 108,
+   "Name": "College of Agriculture and Animal Science",
+   "StateId": 18,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 109,
+   "Name": "Federal College of Chemical and Leather and Technology",
+   "StateId": 18,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 110,
+   "Name": "Federal College of Forestry Mechanisation",
+   "StateId": 18,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 111,
+   "Name": "Kaduna Polytechnic",
+   "StateId": 18,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 112,
+   "Name": "Nigerian College of Aviation Technology",
+   "StateId": 18,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 113,
+   "Name": "federal school of statistics Manchok",
+   "StateId": 18,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 114,
+   "Name": "Nuhu Bamalli Polytechnic",
+   "StateId": 18,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 115,
+   "Name": "Samaru College of Agriculture",
+   "StateId": 18,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 116,
+   "Name": "Audu Bako School of Agriculture",
+   "StateId": 19,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 117,
+   "Name": "Kano State Polytechnic",
+   "StateId": 19,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 118,
+   "Name": "Mohammed Abdullahi Wase Polytechnic",
+   "StateId": 19,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 119,
+   "Name": "Hassan Usman Katsina Polytechnic",
+   "StateId": 20,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 120,
+   "Name": "College of Agriculture, Zuru",
+   "StateId": 21,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 121,
+   "Name": "Federal Polytechnic, Birnin-Kebbi",
+   "StateId": 21,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 122,
+   "Name": "Kebbi State Polytechnic",
+   "StateId": 21,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 123,
+   "Name": "College of Agriculture, Kabba",
+   "StateId": 22,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 124,
+   "Name": "Federal Polytechnic, Idah",
+   "StateId": 22,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 125,
+   "Name": "Kogi State Polytechnic",
+   "StateId": 22,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 126,
+   "Name": "Federal Polytechnic, Offa",
+   "StateId": 23,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 127,
+   "Name": "Kwara State Polytechnic",
+   "StateId": 23,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 128,
+   "Name": "Federal College of Fisheries and Marine Technology",
+   "StateId": 24,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 129,
+   "Name": "Grace Polytechnic",
+   "StateId": 24,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 130,
+   "Name": "Lagos City Polytechnic",
+   "StateId": 24,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 131,
+   "Name": "Lagos State Polytechnic",
+   "StateId": 24,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 132,
+   "Name": "Ronik Polytechnic",
+   "StateId": 24,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 133,
+   "Name": "School of Agriculture, Ikorodu",
+   "StateId": 24,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 134,
+   "Name": "Wavecrest College of Hospitality",
+   "StateId": 24,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 135,
+   "Name": "Wolex Polytechnic",
+   "StateId": 24,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 136,
+   "Name": "Yaba College of Technology",
+   "StateId": 24,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 137,
+   "Name": "College of Agriculture, Lafia",
+   "StateId": 25,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 138,
+   "Name": "Maurid Institute of Management & Technology, Nasarawa",
+   "StateId": 25,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 139,
+   "Name": "Federal Polytechnic, Nassarawa",
+   "StateId": 25,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 140,
+   "Name": "Nasarawa State Polytechnic",
+   "StateId": 25,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 141,
+   "Name": "Federal College of Fresh Water Fisheries Technology",
+   "StateId": 26,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 142,
+   "Name": "Federal College of Wildlife Management",
+   "StateId": 26,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 143,
+   "Name": "Federal Polytechnic, Bida",
+   "StateId": 26,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 144,
+   "Name": "Niger State College of Agriculture",
+   "StateId": 26,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 145,
+   "Name": "Niger State Polytechnic",
+   "StateId": 26,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 146,
+   "Name": "Abraham Adesanya Polytechnic",
+   "StateId": 27,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 147,
+   "Name": "Allover Central Polytechnic",
+   "StateId": 27,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 148,
+   "Name": "Federal Polytechnic, Ilaro",
+   "StateId": 27,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 149,
+   "Name": "Gateway Polytechnic Saapade",
+   "StateId": 27,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 150,
+   "Name": "Marvic Polytechnic",
+   "StateId": 27,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 151,
+   "Name": "Moshood Abiola Polytechnic",
+   "StateId": 27,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 152,
+   "Name": "Ogun State College of Health Technology",
+   "StateId": 27,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 153,
+   "Name": "Rufus Giwa Polytechnic",
+   "StateId": 28,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 154,
+   "Name": "Federal Polytechnic, Ede",
+   "StateId": 29,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 155,
+   "Name": "Osun State College of Technology",
+   "StateId": 29,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 156,
+   "Name": "Osun State Polytechnic",
+   "StateId": 29,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 157,
+   "Name": "Igbajo Polytechnic, Igbajo",
+   "StateId": 29,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 158,
+   "Name": "Polytechnic Ile-Ife",
+   "StateId": 29,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 159,
+   "Name": "Interlink Polytechnic",
+   "StateId": 29,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 160,
+   "Name": "Southern Nigeria Institute of Innovative Technology (SNIITPOLY)",
+   "StateId": 29,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 161,
+   "Name": "Federal College of Animal Health & Production Technology",
+   "StateId": 30,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 162,
+   "Name": "Federal College of Animal Health and Production Technology, Ibadan",
+   "StateId": 30,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 163,
+   "Name": "Federal College of Forestry, Ibadan",
+   "StateId": 30,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 164,
+   "Name": "The Polytechnic, Ibadan",
+   "StateId": 30,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 165,
+   "Name": "The Kings Poly, Shaki, Oyo",
+   "StateId": 30,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 166,
+   "Name": "Tower Polytechnic, Ibadan",
+   "StateId": 30,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 167,
+   "Name": "The Oke-Ogun Polytechnic, Saki",
+   "StateId": 30,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 168,
+   "Name": "Federal College of Animal Health and Production Technology, Vom",
+   "StateId": 31,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 169,
+   "Name": "Federal College of Education, Pankshin",
+   "StateId": 31,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 170,
+   "Name": "Federal College of Forestry. Jos",
+   "StateId": 31,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 171,
+   "Name": "Federal College of Land Resources Technology, Kuru",
+   "StateId": 31,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 172,
+   "Name": "Plateau State College of Agriculture",
+   "StateId": 31,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 173,
+   "Name": "Plateau State Polytechnic",
+   "StateId": 31,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 174,
+   "Name": "Eastern Polytechnic",
+   "StateId": 32,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 175,
+   "Name": "Port Harcourt Polytechnic",
+   "StateId": 32,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 176,
+   "Name": "Rivers State Polytechnic",
+   "StateId": 32,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 177,
+   "Name": "College of Agriculture, Jalingo",
+   "StateId": 34,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 178,
+   "Name": "Federal Polytechnic, Damaturu",
+   "StateId": 35,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 179,
+   "Name": "Mai Idris Alooma Polytechnic",
+   "StateId": 35,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 180,
+   "Name": "Abdul Gusau Polytechnic",
+   "StateId": 36,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 181,
+   "Name": "Federal Polytechnic, Namoda",
+   "StateId": 36,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ },
+ {
+   "Id": 182,
+   "Name": "Abdul Gusau Polytechnic",
+   "StateId": 36,
+   "Abbreviation": "",
+   "SchoolCategoryId": 2
+ }
+]

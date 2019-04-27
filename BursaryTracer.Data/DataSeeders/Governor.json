@@ -1,0 +1,1031 @@
+[
+ {
+   "Id": 1,
+   "StateId": 1,
+   "Name": "Orji Uzor Kalu",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 2,
+   "StateId": 1,
+   "Name": "Theodore A. Orji",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 3,
+   "StateId": 1,
+   "Name": "Okezie Ikpeazu",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 4,
+   "StateId": 2,
+   "Name": "Boni Haruna",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 5,
+   "StateId": 2,
+   "Name": "Murtala Nyako",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "26-Feb-08"
+ },
+ {
+   "Id": 6,
+   "StateId": 2,
+   "Name": "James Shaibu Barka",
+   "TenureBegins": "26-Feb-08",
+   "TenureEnd": "29-Apr-08"
+ },
+ {
+   "Id": 7,
+   "StateId": 2,
+   "Name": "Murtala Nyako",
+   "TenureBegins": "29-Apr-08",
+   "TenureEnd": "15-Jul-14"
+ },
+ {
+   "Id": 8,
+   "StateId": 2,
+   "Name": "Alhaji Ahmadu�Umaru Fintiri",
+   "TenureBegins": "15-Jul-14",
+   "TenureEnd": "1-Oct-14"
+ },
+ {
+   "Id": 9,
+   "StateId": 2,
+   "Name": "Bala James Ngilari",
+   "TenureBegins": "1-Oct-14",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 10,
+   "StateId": 2,
+   "Name": "Bindo Jibrilla",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 11,
+   "StateId": 3,
+   "Name": "Victor Attah",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 12,
+   "StateId": 3,
+   "Name": "Godswill Akpabio",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 13,
+   "StateId": 3,
+   "Name": "Udom Gabriel Emmanuel",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 14,
+   "StateId": 4,
+   "Name": "Chinwoke Mbadinuju",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-03"
+ },
+ {
+   "Id": 15,
+   "StateId": 4,
+   "Name": "Chris Ngige",
+   "TenureBegins": "29-May-03",
+   "TenureEnd": "17-Mar-06"
+ },
+ {
+   "Id": 16,
+   "StateId": 4,
+   "Name": "Peter Obi",
+   "TenureBegins": "17-Mar-06",
+   "TenureEnd": "3-Nov-06"
+ },
+ {
+   "Id": 17,
+   "StateId": 4,
+   "Name": "Virginia Etiaba",
+   "TenureBegins": "3-Nov-06",
+   "TenureEnd": "9-Feb-07"
+ },
+ {
+   "Id": 18,
+   "StateId": 4,
+   "Name": "Peter Obi",
+   "TenureBegins": "9-Feb-07",
+   "TenureEnd": "17-Mar-14"
+ },
+ {
+   "Id": 19,
+   "StateId": 4,
+   "Name": "Willie Obiano",
+   "TenureBegins": "17-Mar-14",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 20,
+   "StateId": 5,
+   "Name": "Ahmad Adamu Mu'azu",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 21,
+   "StateId": 5,
+   "Name": "Malam Isa Yuguda",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-20"
+ },
+ {
+   "Id": 22,
+   "StateId": 5,
+   "Name": "Barrister M. A. ABUBAKAR",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 23,
+   "StateId": 6,
+   "Name": "Diepreye Alamieyeseigha",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "9-Dec-05"
+ },
+ {
+   "Id": 24,
+   "StateId": 6,
+   "Name": "Goodluck Jonathan",
+   "TenureBegins": "9-Dec-05",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 25,
+   "StateId": 6,
+   "Name": "Timipre Sylva",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "16-Apr-08"
+ },
+ {
+   "Id": 26,
+   "StateId": 6,
+   "Name": "Werinipre Seibarugo",
+   "TenureBegins": "16-Apr-08",
+   "TenureEnd": "27-May-08"
+ },
+ {
+   "Id": 27,
+   "StateId": 6,
+   "Name": "Timipre Sylva",
+   "TenureBegins": "27-May-08",
+   "TenureEnd": "27-Jan-12"
+ },
+ {
+   "Id": 28,
+   "StateId": 6,
+   "Name": "Nestor Binabo",
+   "TenureBegins": "27-Jan-12",
+   "TenureEnd": "14-Feb-12"
+ },
+ {
+   "Id": 29,
+   "StateId": 6,
+   "Name": "Henry Dickson",
+   "TenureBegins": "14-Feb-12",
+   "TenureEnd": "Present"
+ },
+ {
+   "Id": 30,
+   "StateId": 7,
+   "Name": "George Akume",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 31,
+   "StateId": 7,
+   "Name": "Gabriel Suswam",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 32,
+   "StateId": 7,
+   "Name": "Samuel Ortom",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 33,
+   "StateId": 8,
+   "Name": "Mala Kachalla",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-03"
+ },
+ {
+   "Id": 34,
+   "StateId": 8,
+   "Name": "Ali Modu Sheriff",
+   "TenureBegins": "29-May-03",
+   "TenureEnd": "29-May-11"
+ },
+ {
+   "Id": 35,
+   "StateId": 8,
+   "Name": "Kashim Shettima",
+   "TenureBegins": "29-May-11",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 36,
+   "StateId": 9,
+   "Name": "Donald Duke",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 37,
+   "StateId": 9,
+   "Name": "Liyel Imoke",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 38,
+   "StateId": 9,
+   "Name": "Benedict Ayade",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 39,
+   "StateId": 10,
+   "Name": "James Ibori",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 40,
+   "StateId": 10,
+   "Name": "Emmanuel Uduaghan",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 41,
+   "StateId": 10,
+   "Name": "Ifeanyi Okowa",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 42,
+   "StateId": 11,
+   "Name": "Sam Egwu",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 43,
+   "StateId": 11,
+   "Name": "Martin Elechi",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 44,
+   "StateId": 11,
+   "Name": "Dave Umahi",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 45,
+   "StateId": 12,
+   "Name": "Chief Lucky Igbinedion",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 46,
+   "StateId": 12,
+   "Name": "Professor Oserheimen Osunbor",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "12-Nov-08"
+ },
+ {
+   "Id": 47,
+   "StateId": 12,
+   "Name": "Comrade Adams A. Oshiomhole",
+   "TenureBegins": "12-Nov-08",
+   "TenureEnd": "12-Nov-16"
+ },
+ {
+   "Id": 48,
+   "StateId": 12,
+   "Name": "Godwin Obaseki",
+   "TenureBegins": "12-Nov-16",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 49,
+   "StateId": 13,
+   "Name": "Otunba Niyi Adebayo",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-03"
+ },
+ {
+   "Id": 50,
+   "StateId": 13,
+   "Name": "Ayo Fayose",
+   "TenureBegins": "29-May-03",
+   "TenureEnd": "16-Oct-06"
+ },
+ {
+   "Id": 51,
+   "StateId": 13,
+   "Name": "Chief Friday Aderemi",
+   "TenureBegins": "17-Oct-06",
+   "TenureEnd": "18-Oct-06"
+ },
+ {
+   "Id": 52,
+   "StateId": 13,
+   "Name": "Tunji Olurin",
+   "TenureBegins": "18-Oct-06",
+   "TenureEnd": "27-Apr-07"
+ },
+ {
+   "Id": 53,
+   "StateId": 13,
+   "Name": "Tope Ademiluyi",
+   "TenureBegins": "27-Apr-07",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 54,
+   "StateId": 13,
+   "Name": "Segun Oni",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "15-Oct-10"
+ },
+ {
+   "Id": 55,
+   "StateId": 13,
+   "Name": "Dr. Kayode Fayemi",
+   "TenureBegins": "15th Oct 2010",
+   "TenureEnd": "16th Oct 2014"
+ },
+ {
+   "Id": 56,
+   "StateId": 13,
+   "Name": "Ayo Fayose",
+   "TenureBegins": "16th Oct 2014",
+   "TenureEnd": "16th Oct 2018"
+ },
+ {
+   "Id": 57,
+   "StateId": 13,
+   "Name": "Dr. Kayode Fayemi",
+   "TenureBegins": "16th Oct 2018",
+   "TenureEnd": "Till Date"
+ },
+ {
+   "Id": 58,
+   "StateId": 14,
+   "Name": "Chimaroke Nnamani",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 59,
+   "StateId": 14,
+   "Name": "Sullivan Chime",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 60,
+   "StateId": 14,
+   "Name": "Ifeanyi Ugwuanyi",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 61,
+   "StateId": 15,
+   "Name": "Abubakar Habu Hashidu",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-03"
+ },
+ {
+   "Id": 62,
+   "StateId": 15,
+   "Name": "Mohammed Danjuma Goje",
+   "TenureBegins": "29-May-03",
+   "TenureEnd": "11-May"
+ },
+ {
+   "Id": 63,
+   "StateId": 15,
+   "Name": "Ibrahim Hassan Dankwambo",
+   "TenureBegins": "11-May",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 64,
+   "StateId": 16,
+   "Name": "Achike Udenwa",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 65,
+   "StateId": 16,
+   "Name": "Ikedi G. Ohakim",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-11"
+ },
+ {
+   "Id": 66,
+   "StateId": 16,
+   "Name": "Owelle Rochas Anayo Okorocha",
+   "TenureBegins": "29-May-11",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 67,
+   "StateId": 17,
+   "Name": "Ibrahim Saminu Turaki",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 68,
+   "StateId": 17,
+   "Name": "Sule Lamido",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 69,
+   "StateId": 17,
+   "Name": "Badaru Abubakar",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 70,
+   "StateId": 18,
+   "Name": "Ahmed Makarfi",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 71,
+   "StateId": 18,
+   "Name": "Mohammed Namadi Sambo",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "19-May-10"
+ },
+ {
+   "Id": 72,
+   "StateId": 18,
+   "Name": "Patrick Ibrahim Yakowa",
+   "TenureBegins": "20-May-10",
+   "TenureEnd": "15-Dec-12"
+ },
+ {
+   "Id": 73,
+   "StateId": 18,
+   "Name": "Mukhtar Ramalan Yero",
+   "TenureBegins": "15-Dec-12",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 74,
+   "StateId": 18,
+   "Name": "Nasiru Ahmed El-Rufai",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 75,
+   "StateId": 19,
+   "Name": "Engineer (Dr.)�Rabiu Musa Kwankwaso",
+   "TenureBegins": "May-99",
+   "TenureEnd": "3-May"
+ },
+ {
+   "Id": 76,
+   "StateId": 19,
+   "Name": "Malam�Ibrahim Shekarau",
+   "TenureBegins": "3-May",
+   "TenureEnd": "11-May"
+ },
+ {
+   "Id": 77,
+   "StateId": 19,
+   "Name": "Engineer (Dr.) Rabiu Musa Kwankwaso",
+   "TenureBegins": "11-May",
+   "TenureEnd": "15-May"
+ },
+ {
+   "Id": 78,
+   "StateId": 19,
+   "Name": "Abdullahi Umar Ganduje",
+   "TenureBegins": "15-May",
+   "TenureEnd": "incumbent"
+ },
+ {
+   "Id": 79,
+   "StateId": 20,
+   "Name": "Umaru Musa Yar'Adua",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 80,
+   "StateId": 20,
+   "Name": "Ibrahim Shema",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 81,
+   "StateId": 20,
+   "Name": "Aminu Bello Masari",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 82,
+   "StateId": 21,
+   "Name": "Adamu Aliero",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 83,
+   "StateId": 21,
+   "Name": "Usman Saidu Nasamu Dakingari",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "24-Feb-12"
+ },
+ {
+   "Id": 84,
+   "StateId": 21,
+   "Name": "Aminu Musa Habib Jega",
+   "TenureBegins": "24-Feb-12",
+   "TenureEnd": "2-Apr-12"
+ },
+ {
+   "Id": 85,
+   "StateId": 21,
+   "Name": "Usman Saidu Nasamu Dakingari",
+   "TenureBegins": "2-Apr-12",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 86,
+   "StateId": 21,
+   "Name": "Abubakar Atiku Bagudu",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 87,
+   "StateId": 22,
+   "Name": "Abubakar Audu",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-03"
+ },
+ {
+   "Id": 88,
+   "StateId": 22,
+   "Name": "Ibrahim Idris",
+   "TenureBegins": "29-May-03",
+   "TenureEnd": "6-Feb-08"
+ },
+ {
+   "Id": 89,
+   "StateId": 22,
+   "Name": "Clarence Olafemi",
+   "TenureBegins": "6-Feb-08",
+   "TenureEnd": "29-Mar-08"
+ },
+ {
+   "Id": 90,
+   "StateId": 22,
+   "Name": "Ibrahim Idris",
+   "TenureBegins": "29-Mar-08",
+   "TenureEnd": "11-Jan"
+ },
+ {
+   "Id": 91,
+   "StateId": 22,
+   "Name": "Idris Wada",
+   "TenureBegins": "12-Jan",
+   "TenureEnd": ""
+ },
+ {
+   "Id": 92,
+   "StateId": 22,
+   "Name": "Alhaji Yahaya Adoza Bello",
+   "TenureBegins": "27-Jan-16",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 93,
+   "StateId": 23,
+   "Name": "Mohammed Lawal",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-03"
+ },
+ {
+   "Id": 94,
+   "StateId": 23,
+   "Name": "Bukola Saraki",
+   "TenureBegins": "29-May-03",
+   "TenureEnd": "29-May-11"
+ },
+ {
+   "Id": 95,
+   "StateId": 23,
+   "Name": "Abdulfatah Ahmed",
+   "TenureBegins": "29-May-11",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 96,
+   "StateId": 24,
+   "Name": "Mr Bola Tinubu",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 97,
+   "StateId": 24,
+   "Name": "Mr Babatunde Fashola",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 98,
+   "StateId": 24,
+   "Name": "Mr Akinwunmi Ambode",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": ""
+ },
+ {
+   "Id": 99,
+   "StateId": 25,
+   "Name": "Abdullahi Adamu",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 100,
+   "StateId": 25,
+   "Name": "Aliyu Doma",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "11-May"
+ },
+ {
+   "Id": 101,
+   "StateId": 25,
+   "Name": "Umaru Tanko Al-Makura",
+   "TenureBegins": "11-May",
+   "TenureEnd": ""
+ },
+ {
+   "Id": 102,
+   "StateId": 26,
+   "Name": "Abdulkadir Kure",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 103,
+   "StateId": 26,
+   "Name": "Mu'azu Babangida Aliyu",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 104,
+   "StateId": 26,
+   "Name": "Abubakar Sani Bello",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "-"
+ },
+ {
+   "Id": 105,
+   "StateId": 27,
+   "Name": "Olusegun Osoba",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-03"
+ },
+ {
+   "Id": 106,
+   "StateId": 27,
+   "Name": "Gbenga Daniel",
+   "TenureBegins": "29-May-03",
+   "TenureEnd": "11-May"
+ },
+ {
+   "Id": 107,
+   "StateId": 27,
+   "Name": "Ibikunle Amosun",
+   "TenureBegins": "29-May-11",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 108,
+   "StateId": 28,
+   "Name": "Adebayo Adefarati",
+   "TenureBegins": "1999-05",
+   "TenureEnd": "2003-05"
+ },
+ {
+   "Id": 109,
+   "StateId": 28,
+   "Name": "Olusegun Agagu",
+   "TenureBegins": "2003-05",
+   "TenureEnd": "2009-02"
+ },
+ {
+   "Id": 110,
+   "StateId": 28,
+   "Name": "Olusegun Mimiko",
+   "TenureBegins": "2009-02",
+   "TenureEnd": "2017-02"
+ },
+ {
+   "Id": 111,
+   "StateId": 28,
+   "Name": "Oluwarotimi Odunayo Akeredolu",
+   "TenureBegins": "2017-02",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 112,
+   "StateId": 29,
+   "Name": "Adebisi Akande",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-03"
+ },
+ {
+   "Id": 113,
+   "StateId": 29,
+   "Name": "Olagunsoye Oyinlola",
+   "TenureBegins": "29-May-03",
+   "TenureEnd": "26-Nov-10"
+ },
+ {
+   "Id": 114,
+   "StateId": 29,
+   "Name": "Rauf Aregbesola",
+   "TenureBegins": "26-Nov-10",
+   "TenureEnd": "26-Nov-18"
+ },
+ {
+   "Id": 115,
+   "StateId": 29,
+   "Name": "Adegboyega Oyetola",
+   "TenureBegins": "26-Nov-18",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 116,
+   "StateId": 30,
+   "Name": "Dr.�Lam Adesina",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "28-May-03"
+ },
+ {
+   "Id": 117,
+   "StateId": 30,
+   "Name": "Rashidi Adewolu Ladoja",
+   "TenureBegins": "29-May-03",
+   "TenureEnd": "28-May-07"
+ },
+ {
+   "Id": 118,
+   "StateId": 30,
+   "Name": "Christopher Alao-Akala",
+   "TenureBegins": "12-Jan-06",
+   "TenureEnd": "7-Dec-06"
+ },
+ {
+   "Id": 119,
+   "StateId": 30,
+   "Name": "Christopher Alao-Akala",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "11-May"
+ },
+ {
+   "Id": 120,
+   "StateId": 30,
+   "Name": "Abiola Ajimobi",
+   "TenureBegins": "11-May",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 121,
+   "StateId": 31,
+   "Name": "Joshua Dariye",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "18-May-04"
+ },
+ {
+   "Id": 122,
+   "StateId": 31,
+   "Name": "Chris Alli",
+   "TenureBegins": "18-May-04",
+   "TenureEnd": "18-Nov-04"
+ },
+ {
+   "Id": 123,
+   "StateId": 31,
+   "Name": "Joshua Dariye",
+   "TenureBegins": "18-Nov-04",
+   "TenureEnd": "13-Nov-06"
+ },
+ {
+   "Id": 124,
+   "StateId": 31,
+   "Name": "Michael Botmang",
+   "TenureBegins": "13-Nov-06",
+   "TenureEnd": "27-Apr-07"
+ },
+ {
+   "Id": 125,
+   "StateId": 31,
+   "Name": "Joshua Dariye",
+   "TenureBegins": "27-Apr-07",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 126,
+   "StateId": 31,
+   "Name": "Jonah David Jang",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 127,
+   "StateId": 31,
+   "Name": "Simon Bako Lalong",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 128,
+   "StateId": 32,
+   "Name": "Peter Odili",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 129,
+   "StateId": 32,
+   "Name": "Celestine Omehia",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "26-Oct-07"
+ },
+ {
+   "Id": 130,
+   "StateId": 32,
+   "Name": "Chibuike Amaechi",
+   "TenureBegins": "26-Oct-07",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 131,
+   "StateId": 32,
+   "Name": "Ezenwo Wike",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 132,
+   "StateId": 33,
+   "Name": "Attahiru Bafarawa",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 133,
+   "StateId": 33,
+   "Name": "Aliyu Magatakarda Wamakko",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "11-Apr-08"
+ },
+ {
+   "Id": 134,
+   "StateId": 33,
+   "Name": "Abdullahi Balarabe Salame",
+   "TenureBegins": "11-Apr-08",
+   "TenureEnd": "29-May-08"
+ },
+ {
+   "Id": 135,
+   "StateId": 33,
+   "Name": "Aliyu Magatakarda Wamakko",
+   "TenureBegins": "29-May-08",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 136,
+   "StateId": 33,
+   "Name": "Aminu Waziri Tambuwal",
+   "TenureBegins": "28-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 137,
+   "StateId": 34,
+   "Name": "Jolly Nyame",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 138,
+   "StateId": 34,
+   "Name": "Danbaba Danfulani Suntai",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "12-Oct"
+ },
+ {
+   "Id": 139,
+   "StateId": 34,
+   "Name": "Garba Umar",
+   "TenureBegins": "12-Oct",
+   "TenureEnd": "2013"
+ },
+ {
+   "Id": 140,
+   "StateId": 34,
+   "Name": "Abubakar sani danladi",
+   "TenureBegins": "2013",
+   "TenureEnd": "29-May-15"
+ },
+ {
+   "Id": 141,
+   "StateId": 34,
+   "Name": "Darius Dickson Ishaku",
+   "TenureBegins": "29-May-15",
+   "TenureEnd": "Incumbent"
+ },
+ {
+   "Id": 142,
+   "StateId": 35,
+   "Name": "Bukar Abba Ibrahim",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 143,
+   "StateId": 35,
+   "Name": "Mamman Bello Ali",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "27-Jan-09"
+ },
+ {
+   "Id": 144,
+   "StateId": 35,
+   "Name": "Ibrahim Gaidam",
+   "TenureBegins": "2009",
+   "TenureEnd": "present"
+ },
+ {
+   "Id": 145,
+   "StateId": 36,
+   "Name": "Ahmad Sani Yarima",
+   "TenureBegins": "29-May-99",
+   "TenureEnd": "29-May-07"
+ },
+ {
+   "Id": 146,
+   "StateId": 36,
+   "Name": "Mahmud Shinkafi",
+   "TenureBegins": "29-May-07",
+   "TenureEnd": "11-May"
+ },
+ {
+   "Id": 147,
+   "StateId": 36,
+   "Name": "Abdul'aziz Abubakar Yari",
+   "TenureBegins": "11-May",
+   "TenureEnd": "incumbent"
+ }
+]

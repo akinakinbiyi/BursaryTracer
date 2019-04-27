@@ -1,0 +1,322 @@
+[
+    {
+        "FacultyId":"1",
+        "Id":"01",
+        "Name":"Animal Science"
+    },
+    {
+        "FacultyId":"1",
+        "Id":"02",
+        "Name":"Soil Science"
+    },
+    {
+        "FacultyId":"1",
+        "Id":"03",
+        "Name":"Agric. Economics"
+    },
+    {
+        "FacultyId":"1",
+        "Id":"04",
+        "Name":"Agric. Extension"
+    },
+    {
+        "FacultyId":"2",
+        "Id":"05",
+        "Name":"Mass Communication"
+    },
+    {
+        "FacultyId":"2",
+        "Id":"06",
+        "Name":"Archaeology & Tourism"
+    },
+    {
+        "FacultyId":"2",
+        "Id":"07",
+        "Name":"History & International Studies"
+    },
+    {
+        "FacultyId":"2",
+        "Id":"08",
+        "Name":"Fine & Applied Arts"
+    },
+    {
+        "FacultyId":"2",
+        "Id":"09",
+        "Name":"Performing Arts"
+    },
+    {
+        "FacultyId":"2",
+        "Id":"10",
+        "Name":"Music"
+    },
+    {
+        "FacultyId":"2",
+        "Id":"11",
+        "Name":"English & Literary Studies"
+    },
+    {
+        "FacultyId":"2",
+        "Id":"12",
+        "Name":"Foreign Languages"
+    },
+    {
+        "FacultyId":"2",
+        "Id":"13",
+        "Name":"Linguistics & Nigerian Languages"
+    },
+    {
+        "FacultyId":"11",
+        "Id":"14",
+        "Name":"Microbiology"
+    },
+    {
+        "FacultyId":"11",
+        "Id":"15",
+        "Name":"Biochemistry"
+    },
+    {
+        "FacultyId":"11",
+        "Id":"16",
+        "Name":"Plant Sciences"
+    },
+    {
+        "FacultyId":"11",
+        "Id":"17",
+        "Name":"Zoology"
+    },
+    {
+        "FacultyId":"4",
+        "Id":"18",
+        "Name":"Accountancy"
+    },
+    {
+        "FacultyId":"4",
+        "Id":"19",
+        "Name":"Marketing"
+    },
+    {
+        "FacultyId":"4",
+        "Id":"20",
+        "Name":"Business Administration"
+    },
+    {
+        "FacultyId":"4",
+        "Id":"21",
+        "Name":"Banking & Finance"
+    },
+    {
+        "FacultyId":"4",
+        "Id":"22",
+        "Name":"Business Management"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"23",
+        "Name":"Arts Education"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"24",
+        "Name":"Science Education"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"25",
+        "Name":"Adult Education"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"26",
+        "Name":"Education Foundation"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"27",
+        "Name":"Health & Physical Education"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"28",
+        "Name":"Library Sciences Education"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"29",
+        "Name":"Social Science Education"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"30",
+        "Name":"Computer Education"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"31",
+        "Name":"Home Economics"
+    },
+    {
+        "FacultyId":"5",
+        "Id":"32",
+        "Name":"Vocational Teacher Education"
+    },
+    {
+        "FacultyId":"7",
+        "Id":"33",
+        "Name":"Civil Engineering"
+    },
+    {
+        "FacultyId":"7",
+        "Id":"34",
+        "Name":"Electronic Engineering"
+    },
+    {
+        "FacultyId":"7",
+        "Id":"35",
+        "Name":"Electrical Engineering"
+    },
+    {
+        "FacultyId":"7",
+        "Id":"36",
+        "Name":"Mechanical Engineering"
+    },
+    {
+        "FacultyId":"7",
+        "Id":"37",
+        "Name":"Agric. & Bioresources Engineering"
+    },
+    {
+        "FacultyId":"7",
+        "Id":"38",
+        "Name":"Materials & Metallurgical Engineering"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"56",
+        "Name":"Surgery"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"55",
+        "Name":"Radiation Medicine"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"54",
+        "Name":"Physiological Medicine"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"53",
+        "Name":"Pharmacology & Therapeutics"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"52",
+        "Name":"Paediatric Surgery"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"51",
+        "Name":"Paediatrics"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"50",
+        "Name":"Otolaringology"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"49",
+        "Name":"Ophthalmology"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"48",
+        "Name":"Obstetrics & Gaenecology"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"47",
+        "Name":"Morbid Anatomy"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"46",
+        "Name":"Medical Microbiology"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"45",
+        "Name":"Medical Biochemistry"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"44",
+        "Name":"Haematology & Immunology"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"43",
+        "Name":"Dermatology"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"42",
+        "Name":"Community Medicine"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"41",
+        "Name":"Chemical Pathology"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"40",
+        "Name":"Anatomy"
+    },
+    {
+        "FacultyId":"3",
+        "Id":"39",
+        "Name":"Anaesthesia"
+    },
+    {
+        "FacultyId":"6",
+        "Id":"57",
+        "Name":"Philosophy"
+    },
+    {
+        "FacultyId":"6",
+        "Id":"58",
+        "Name":"Public Administration"
+    },
+    {
+        "FacultyId":"6",
+        "Id":"59",
+        "Name":"Psychology"
+    },
+    {
+        "FacultyId":"6",
+        "Id":"60",
+        "Name":"Economics"
+    },
+    {
+        "FacultyId":"6",
+        "Id":"61",
+        "Name":"Geography"
+    },
+    {
+        "FacultyId":"6",
+        "Id":"62",
+        "Name":"Sociology & Anthropology"
+    },
+    {
+        "FacultyId":"6",
+        "Id":"63",
+        "Name":"Religious and Cultural Studies"
+    },
+    {
+        "FacultyId":"6",
+        "Id":"64",
+        "Name":"Social Work"
+    }
+]

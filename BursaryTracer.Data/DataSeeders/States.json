@@ -1,186 +1,186 @@
 [
   {
-    "Id": "1",
+    "Id": 1,
     "StateCode": "AB",
     "Name": "Abia"
   },
   {
-    "Id": "2",
+    "Id": 2,
     "StateCode": "AD",
     "Name": "Adamawa"
   },
   {
-    "Id": "3",
+    "Id": 3,
     "StateCode": "AK",
     "Name": "Akwa Ibom"
   },
   {
-    "Id": "4",
+    "Id": 4,
     "StateCode": "AN",
     "Name": "Anambra"
   },
   {
-    "Id": "5",
+    "Id": 5,
     "StateCode": "BA",
     "Name": "Bauchi"
   },
   {
-    "Id": "6",
+    "Id":6,
     "StateCode": "BY",
     "Name": "Bayelsa"
   },
   {
-    "Id": "7",
+    "Id": 7,
     "StateCode": "BE",
     "Name": "Benue"
   },
   {
-    "Id": "8",
+    "Id": 8,
     "StateCode": "BO",
     "Name": "Borno"
   },
   {
-    "Id": "9",
+    "Id": 9,
     "StateCode": "CR",
     "Name": "Cross River"
   },
   {
-    "Id": "10",
+    "Id": 10,
     "StateCode": "DE",
     "Name": "Delta"
   },
   {
-    "Id": "11",
+    "Id": 11,
     "StateCode": "EB",
     "Name": "Ebonyi"
   },
   {
-    "Id": "12",
+    "Id": 12,
     "StateCode": "ED",
     "Name": "Edo"
   },
   {
-    "Id": "13",
+    "Id": 13,
     "StateCode": "EK",
     "Name": "Ekiti"
   },
   {
-    "Id": "14",
+    "Id": 14,
     "StateCode": "EN",
     "Name": "Enugu"
   },
   {
-    "Id": "15",
+    "Id": 15,
     "StateCode": "GO",
     "Name": "Gombe"
   },
   {
-    "Id": "16",
+    "Id": 16,
     "StateCode": "IM",
     "Name": "Imo"
   },
   {
-    "Id": "17",
+    "Id": 17,
     "StateCode": "JI",
     "Name": "Jigawa"
   },
   {
-    "Id": "18",
+    "Id": 18,
     "StateCode": "KD",
     "Name": "Kaduna"
   },
   {
-    "Id": "19",
+    "Id": 19,
     "StateCode": "KN",
     "Name": "Kano"
   },
   {
-    "Id": "20",
+    "Id": 20,
     "StateCode": "KT",
     "Name": "Katsina"
   },
   {
-    "Id": "21",
+    "Id": 21,
     "StateCode": "KE",
     "Name": "Kebbi"
   },
   {
-    "Id": "22",
+    "Id": 22,
     "StateCode": "KO",
     "Name": "Kogi"
   },
   {
-    "Id": "23",
+    "Id": 23,
     "StateCode": "KW",
     "Name": "Kwara"
   },
   {
-    "Id": "24",
+    "Id": 24,
     "StateCode": "LA",
     "Name": "Lagos"
   },
   {
-    "Id": "25",
+    "Id": 25,
     "StateCode": "NA",
     "Name": "Nasarawa"
   },
   {
-    "Id": "26",
+    "Id": 26,
     "StateCode": "NI",
     "Name": "Niger"
   },
   {
-    "Id": "27",
+    "Id": 27,
     "StateCode": "OG",
     "Name": "Ogun"
   },
   {
-    "Id": "28",
+    "Id": 28,
     "StateCode": "ON",
     "Name": "Ondo"
   },
   {
-    "Id": "29",
+    "Id": 29,
     "StateCode": "OS",
     "Name": "Osun"
   },
   {
-    "Id": "30",
+    "Id": 30,
     "StateCode": "OY",
     "Name": "Oyo"
   },
   {
-    "Id": "31",
+    "Id": 31,
     "StateCode": "PL",
     "Name": "Plateau"
   },
   {
-    "Id": "32",
+    "Id": 32,
     "StateCode": "RI",
     "Name": "Rivers"
   },
   {
-    "Id": "33",
+    "Id": 33,
     "StateCode": "SO",
     "Name": "Sokoto"
   },
   {
-    "Id": "34",
+    "Id": 34,
     "StateCode": "TA",
     "Name": "Taraba"
   },
   {
-    "Id": "35",
+    "Id": 35,
     "StateCode": "YO",
     "Name": "Yobe"
   },
   {
-    "Id": "36",
+    "Id": 36,
     "StateCode": "ZA",
     "Name": "Zamfara"
   },
   {
-    "Id": "37",
+    "Id": 37,
     "StateCode": "FC",
     "Name": "FCT"
   }

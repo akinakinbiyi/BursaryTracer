@@ -10,7 +10,7 @@ namespace BursaryTracer.Domain
         public string Name { get; set; }
         public List<Course> Course { get; set; }
         public int CourseId { get; set; }
-        public School School { get; set; }
-        public int SchoolId { get; set; }
+        //public School School { get; set; }
+        //public int SchoolId { get; set; }
     }
 }
