@@ -9,6 +9,13 @@ namespace BursaryTracer.Domain
         public string Name { get; set; }
         public List<City>  Cities { get; set; }
         public List<School> Schools { get; set; }
-        public List<Governor>  Governors { get; set; }
+        public int GovernorLists
+        {
+            get
+            {
+                return Governors.Count;
+            }
+        }
+        public ICollection<Governor> Governors { get; set; } = new List<Governor>();
     }
 }

@@ -8,6 +8,9 @@ namespace BursaryTracer.Data
 {
     public class BTDbContext : DbContext
     {
+        public BTDbContext(DbContextOptions<BTDbContext> options)
+            : base(options)
+        { }
         public DbSet<State> States { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<School> Schools { get; set; }
@@ -17,7 +20,7 @@ namespace BursaryTracer.Data
         public DbSet<Course> Courses { get; set; }
         public DbSet<Student> Students { get; set; }
 
-        readonly string MyServer = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=master;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string MyServer = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BTracer;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
