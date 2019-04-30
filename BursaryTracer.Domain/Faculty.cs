@@ -8,7 +8,6 @@ namespace BursaryTracer.Domain
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Course> Courses { get; set; } = new List<Course>();
         public int CourseId { get; set; }
         //public School School { get; set; }
         //public int SchoolId { get; set; }
@@ -20,5 +19,7 @@ namespace BursaryTracer.Domain
                 return Courses.Count;
             }
         }
+        public ICollection<Course> Courses { get; set; } = new List<Course>();
+
     }
 }
