@@ -8,14 +8,10 @@ namespace BursaryTracer.Domain
         public string StateCode { get; set; }
         public string Name { get; set; }
         //public List<City>  Cities { get; set; }
-        //public List<School> Schools { get; set; }
-        public int GovernorLists
-        {
-            get
-            {
-                return Governors.Count;
-            }
-        }
-        public ICollection<Governor> Governors { get; set; } = new List<Governor>();
+        public int GovernorLists => Governors.Count;
+        public ICollection<GovernorDTO> Governors { get; set; } = new List<GovernorDTO>();
+        public int SchoolLists => Schools.Count;
+        public ICollection<SchoolDTO> Schools { get; set; } = new List<SchoolDTO>();
+
     }
 }
