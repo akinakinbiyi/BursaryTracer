@@ -8,9 +8,9 @@ namespace BursaryTracer.Data
 {
     public class BTDbContext : DbContext
     {
-        //public BTDbContext(DbContextOptions<BTDbContext> options)
-        //    : base(options)
-        //{ }
+        public BTDbContext(DbContextOptions<BTDbContext> options)
+            : base(options)
+        { }
         public DbSet<State> States { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<School> Schools { get; set; }
@@ -38,13 +38,33 @@ namespace BursaryTracer.Data
             var faculty = JsonConvert.DeserializeObject<IEnumerable<Faculty>>(File.ReadAllText(filepath + "Faculty.json"));
             var course = JsonConvert.DeserializeObject<IEnumerable<Course>>(File.ReadAllText(filepath + "Course.json"));
 
-            modelBuilder.Entity<State>().HasData(state);
+            //modelBuilder.Entity<State>().HasData(state);
             modelBuilder.Entity<City>().HasData(cities);
             modelBuilder.Entity<SchoolCategory>().HasData(schoolCategories);
             modelBuilder.Entity<School>().HasData(school);
-            modelBuilder.Entity<Governor>().HasData(governors);
+            //modelBuilder.Entity<Governor>().HasData(governors);
             modelBuilder.Entity<Faculty>().HasData(faculty);
             modelBuilder.Entity<Course>().HasData(course);
+
+
+
+            modelBuilder.Entity<State>(s =>
+            {
+                s.HasData(state);
+                s.HasMany(g => g.Governors);
+                //s.HasOne(g => g.Governors);
+            });
+
+            modelBuilder.Entity<Governor>(g =>
+            {
+                g.HasData(governors);
+                g.HasOne(s => s.State).WithMany(sg => sg.Governors).HasForeignKey(s => s.StateId);
+            });
+
+            //Relatonships
+            //modelBuilder.Entity<State>().HasMany(g => g.Governors);
         }
+
+
     }
 }

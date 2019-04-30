@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BursaryTracer.Data.Migrations
 {
     [DbContext(typeof(BTDbContext))]
-    [Migration("20190430014307_Initials")]
-    partial class Initials
+    [Migration("20190430050804_State2Governor")]
+    partial class State2Governor
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -8219,7 +8219,7 @@ namespace BursaryTracer.Data.Migrations
             modelBuilder.Entity("BursaryTracer.Domain.City", b =>
                 {
                     b.HasOne("BursaryTracer.Domain.State", "State")
-                        .WithMany("Cities")
+                        .WithMany()
                         .HasForeignKey("StateId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
@@ -8255,7 +8255,7 @@ namespace BursaryTracer.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("BursaryTracer.Domain.State", "State")
-                        .WithMany("Schools")
+                        .WithMany()
                         .HasForeignKey("StateId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });

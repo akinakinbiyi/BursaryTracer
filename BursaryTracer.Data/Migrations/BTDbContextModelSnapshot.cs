@@ -8217,7 +8217,7 @@ namespace BursaryTracer.Data.Migrations
             modelBuilder.Entity("BursaryTracer.Domain.City", b =>
                 {
                     b.HasOne("BursaryTracer.Domain.State", "State")
-                        .WithMany("Cities")
+                        .WithMany()
                         .HasForeignKey("StateId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
@@ -8253,7 +8253,7 @@ namespace BursaryTracer.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("BursaryTracer.Domain.State", "State")
-                        .WithMany("Schools")
+                        .WithMany()
                         .HasForeignKey("StateId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
