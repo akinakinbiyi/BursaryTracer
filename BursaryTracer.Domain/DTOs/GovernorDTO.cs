@@ -6,7 +6,5 @@
         public string Name { get; set; }
         public string StartsTenure { get; set; }
         public string EndsTenure { get; set; }
-
-
     }
 }

@@ -23,11 +23,11 @@ namespace BursaryTracer.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<BTDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("BursaryApiDatabase")));
 
             services.AddScoped<IServicesRepository, ServicesRepository>();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
         }
 
@@ -41,10 +41,13 @@ namespace BursaryTracer.API
 
             Mapper.Initialize(cfg =>
             {
+                ///    .ForMember(m => m.Governors, o => o.Ignore())
                 cfg.CreateMap<State, StateDTO>().ReverseMap();
                 cfg.CreateMap<State, StateWithoutLists>().ReverseMap();
                 cfg.CreateMap<StateWithoutLists, StateDTO>().ReverseMap();
                 cfg.CreateMap<Governor, GovernorDTO>().ReverseMap();
+                //cfg.CreateMap<GovernorDTO, Governor>().ForMember(g=>g.State, i=>i.Ignore()).ReverseMap();
+
             });
 
             app.UseMvc();
