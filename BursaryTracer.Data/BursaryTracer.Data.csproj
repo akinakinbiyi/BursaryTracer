@@ -11,6 +11,7 @@
     <Compile Remove="Migrations\20190430034633_State2Governors.cs" />
     <Compile Remove="Migrations\20190430045244_State2Governor.cs" />
     <Compile Remove="Migrations\20190430050641_State2Governor.cs" />
+    <Compile Remove="Migrations\20190430050804_State2Governor.cs" />
   </ItemGroup>
 
   <ItemGroup>

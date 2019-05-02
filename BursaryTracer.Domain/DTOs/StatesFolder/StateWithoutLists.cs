@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace BursaryTracer.Domain
+﻿namespace BursaryTracer.Domain.StatesFolder
 {
     public class StateWithoutLists
     {

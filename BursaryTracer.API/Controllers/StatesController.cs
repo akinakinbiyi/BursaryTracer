@@ -1,24 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using BursaryTracer.Data;
-using BursaryTracer.Domain;
+﻿using AutoMapper;
+using BursaryTracer.Domain.StatesFolder;
 using BursaryTracer.Services;
-using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace BursaryTracer.API.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/States")]
     [ApiController]
     public class StatesController : ControllerBase
     {
         private readonly IServicesRepository repository;
 
-        public StatesController(IServicesRepository  servicesRepository)
+        public StatesController(IServicesRepository servicesRepository)
         {
             repository = servicesRepository;
         }
@@ -34,39 +28,108 @@ namespace BursaryTracer.API.Controllers
             return Ok(results);
         }
 
-        // GET: api/States
-        [Route("/GetStatesWithGovernors")]
-        [HttpGet]
-        public IActionResult GetStatesWithGovernors()
-        {
-            var stateEntitiy = repository.GetStates();
+        //// GET: api/States
+        //[HttpGet("{Id}/GetStateWithAll", Name = "GetStateWithAll")]
+        //public IActionResult GetStateWithAll(int Id, bool IncludeRelatedData)
+        //{
+        //    var stateEntitiy = repository.GetSchool(Id, IncludeRelatedData);
 
-            var results = Mapper.Map<IEnumerable<StateWithoutLists>>(stateEntitiy);
+        //    if (stateEntitiy == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return Ok(results);
-        }
+        //    if (IncludeRelatedData)
+        //    {
+        //        var results = Mapper.Map<StateDto>(stateEntitiy);
+        //        return Ok(results);
+        //    }
+
+        //    var stateWithoutListsResults = Mapper.Map<StateWithoutLists>(stateEntitiy);
+
+        //    return Ok(stateWithoutListsResults);
+        //}
 
         // GET: api/States/5
         [HttpGet("{Id}", Name = "GetState")]
-        public IActionResult GetState(int Id, bool IncludeGovernorList = false)
+        public IActionResult GetState(int Id, bool IncludeRelatedData = false)
         {
-
-            var stateEntitiy = repository.GetState(Id, IncludeGovernorList);
+            var stateEntitiy = repository.GetStateWithAll(Id, IncludeRelatedData);
 
             if (stateEntitiy == null)
             {
                 return NotFound();
             }
 
-            if (IncludeGovernorList)
+            if (IncludeRelatedData)
             {
-                var results = Mapper.Map<StateDTO>(stateEntitiy);
+                var results = Mapper.Map<StateDto>(stateEntitiy);
                 return Ok(results);
             }
 
-            var stateWithoutGovernorListResults = Mapper.Map<StateWithoutLists>(stateEntitiy);
+            var stateWithoutListsResults = Mapper.Map<StateWithoutLists>(stateEntitiy);
 
-            return Ok(stateWithoutGovernorListResults);
+            return Ok(stateWithoutListsResults);
+        }
+
+        // GET: api/States/5/Governors
+        [HttpGet("{Id}/Governors", Name = "GetStateWithGovernorList")]
+        public IActionResult GetStateWithGovernorList(int Id)
+        {
+            var stateEntitiy = repository.GetStateWithGovernorList(Id);
+
+            if (stateEntitiy == null)
+            {
+                return NotFound();
+            }
+
+            var results = Mapper.Map<StateWithGovernorList>(stateEntitiy);
+            return Ok(results);
+        }
+
+        // GET: api/States/5/Cities
+        [HttpGet("{Id}/Cities", Name = "GetStateWithCityList")]
+        public IActionResult GetStateWithCityList(int Id)
+        {
+            var stateEntitiy = repository.GetStateWithCityList(Id);
+
+            if (stateEntitiy == null)
+            {
+                return NotFound();
+            }
+
+            var results = Mapper.Map<StateWithCityList>(stateEntitiy);
+            return Ok(results);
+        }
+
+        // GET: api/States/5/Schools
+        [HttpGet("{Id}/Schools", Name = "GetStateWithSchoolList")]
+        public IActionResult GetStateWithSchoolList(int Id)
+        {
+            var stateEntitiy = repository.GetStateWithSchoolList(Id);
+
+            if (stateEntitiy == null)
+            {
+                return NotFound();
+            }
+
+            var results = Mapper.Map<StateWithSchoolList>(stateEntitiy);
+            return Ok(results);
+        }
+
+        // GET: api/States/5/Students
+        [HttpGet("{Id}/Students", Name = "GetStateWithCitizenList")]
+        public IActionResult GetStateWithCitizenList(int Id)
+        {
+            var stateEntitiy = repository.GetStateWithCitizenList(Id);
+
+            if (stateEntitiy == null)
+            {
+                return NotFound();
+            }
+
+            var results = Mapper.Map<StateWithCitizenList>(stateEntitiy);
+            return Ok(results);
         }
 
         //// PUT: api/States/5

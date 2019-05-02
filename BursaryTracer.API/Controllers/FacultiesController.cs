@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using BursaryTracer.Data;
-using BursaryTracer.Domain;
-using BursaryTracer.Services;
-using AutoMapper;
+﻿using AutoMapper;
 using BursaryTracer.Domain.DTOs;
+using BursaryTracer.Services;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace BursaryTracer.API.Controllers
 {
@@ -23,6 +16,7 @@ namespace BursaryTracer.API.Controllers
         {
             repository = servicesRepository;
         }
+
         // GET: api/Faculties
         [HttpGet]
         public IActionResult GetFaculties()
@@ -38,7 +32,6 @@ namespace BursaryTracer.API.Controllers
         [HttpGet("{Id}", Name = "GetFaculty")]
         public IActionResult GetFaculty(int Id, bool IncludeCourseList = false)
         {
-
             var facultyEntitiy = repository.GetFaculty(Id, IncludeCourseList);
 
             if (facultyEntitiy == null)
@@ -48,7 +41,7 @@ namespace BursaryTracer.API.Controllers
 
             if (IncludeCourseList)
             {
-                var results = Mapper.Map<FacaultyDTO>(facultyEntitiy);
+                var results = Mapper.Map<FacaultyDto>(facultyEntitiy);
                 return Ok(results);
             }
 
@@ -56,7 +49,6 @@ namespace BursaryTracer.API.Controllers
 
             return Ok(facaultyWithoutCourseListResults);
         }
-
 
         //// PUT: api/Faculties/5
         //[HttpPut("{id}")]

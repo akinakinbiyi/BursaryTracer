@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace BursaryTracer.Domain.DTOs
 {
-  public  class FacaultyDTO
+    public class FacaultyDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public int CourseLists => Courses.Count;
 
-        public ICollection<CourseDTO> Courses { get; set; } = new List<CourseDTO>();
-
+        public ICollection<CourseDto> Courses { get; set; } = new List<CourseDto>();
     }
 }

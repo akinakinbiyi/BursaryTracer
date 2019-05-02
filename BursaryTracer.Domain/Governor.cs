@@ -8,10 +8,10 @@ namespace BursaryTracer.Domain
         public string Name { get; set; }
         public string StartsTenure { get; set; }
         public string EndsTenure { get; set; }
+
         [ForeignKey("StateId")]
-        public  State State { get; set; }
+        public State State { get; set; }
+
         public int StateId { get; set; }
-
-
     }
 }

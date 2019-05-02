@@ -1,6 +1,6 @@
-﻿namespace BursaryTracer.Domain.DTOs
+﻿namespace BursaryTracer.Domain.CityFolder
 {
-    public class FacaultyWithoutCourseList
+    public class CityDto
     {
         public int Id { get; set; }
         public string Name { get; set; }

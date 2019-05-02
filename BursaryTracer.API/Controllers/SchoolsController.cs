@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using BursaryTracer.Data;
+﻿using AutoMapper;
 using BursaryTracer.Domain;
+using BursaryTracer.Domain.SchoolFolder;
 using BursaryTracer.Services;
-using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace BursaryTracer.API.Controllers
 {
@@ -38,7 +33,6 @@ namespace BursaryTracer.API.Controllers
         [HttpGet("{Id}", Name = "GetSchool")]
         public IActionResult GetSchool(int Id, bool IncludeFacultyList = false)
         {
-
             var schoolEntitiy = repository.GetSchool(Id, IncludeFacultyList);
 
             if (schoolEntitiy == null)
@@ -56,7 +50,6 @@ namespace BursaryTracer.API.Controllers
 
             return Ok(schoolWithoutFacultyListsResults);
         }
-
 
         //// PUT: api/Schools/5
         //[HttpPut("{id}")]

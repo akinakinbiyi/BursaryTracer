@@ -1,7 +1,5 @@
 ﻿using BursaryTracer.Domain;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace BursaryTracer.Services
 {
@@ -14,17 +12,19 @@ namespace BursaryTracer.Services
 
         IEnumerable<State> GetStatesWithGovernors();
 
+        State GetState(int Id);
+        State GetStateWithGovernorList(int Id);
+        State GetStateWithCityList(int Id);
+        State GetStateWithSchoolList(int Id);
+        State GetStateWithCitizenList(int Id);
+        State GetStateWithAll(int Id, bool IncludeRelatedData);
 
-        State GetState(int Id, bool IncludeGovernorList/*, bool IncludeSchoolList*/);
-
-
-        ///Faculties
         ///
         bool FacultyExists(int Id);
 
         IEnumerable<Faculty> GetFaculties();
-        Faculty GetFaculty(int Id, bool IncludeCourseList);
 
+        Faculty GetFaculty(int Id, bool IncludeCourseList);
 
         ///Schools
         ///
@@ -32,6 +32,7 @@ namespace BursaryTracer.Services
         bool SchoolExists(int Id);
 
         IEnumerable<School> GetSchools();
+
         School GetSchool(int Id, bool IncludeFacultyList);
     }
 }

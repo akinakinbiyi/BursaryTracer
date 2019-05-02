@@ -1,6 +1,6 @@
 ﻿namespace BursaryTracer.Domain
 {
-    public class GovernorDTO 
+    public class GovernorDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }

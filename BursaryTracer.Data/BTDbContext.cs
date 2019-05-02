@@ -11,6 +11,7 @@ namespace BursaryTracer.Data
         public BTDbContext(DbContextOptions<BTDbContext> options)
             : base(options)
         { }
+
         public DbSet<State> States { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<School> Schools { get; set; }
@@ -28,6 +29,7 @@ namespace BursaryTracer.Data
         }
 
         private readonly string filepath = @"C:\Trainings\BursaryTracer\BursaryTracer.Data\DataSeeders\";
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             var state = JsonConvert.DeserializeObject<IEnumerable<State>>(File.ReadAllText(filepath + "States.json"));
@@ -41,12 +43,16 @@ namespace BursaryTracer.Data
             //modelBuilder.Entity<State>().HasData(state);
             modelBuilder.Entity<City>().HasData(cities);
             modelBuilder.Entity<SchoolCategory>().HasData(schoolCategories);
-            modelBuilder.Entity<School>().HasData(school);
+            //modelBuilder.Entity<School>().HasData(school);
             //modelBuilder.Entity<Governor>().HasData(governors);
             modelBuilder.Entity<Faculty>().HasData(faculty);
             modelBuilder.Entity<Course>().HasData(course);
 
-
+            modelBuilder.Entity<School>(s =>
+            {
+                s.HasData(school);
+                s.HasMany(f => f.Faculties);
+            });
 
             modelBuilder.Entity<State>(s =>
             {
@@ -64,7 +70,5 @@ namespace BursaryTracer.Data
             //Relatonships
             //modelBuilder.Entity<State>().HasMany(g => g.Governors);
         }
-
-
     }
 }

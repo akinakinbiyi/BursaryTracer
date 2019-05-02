@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BursaryTracer.Data.Migrations
 {
-    public partial class State2Governor : Migration
+    public partial class School2Faculty : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
