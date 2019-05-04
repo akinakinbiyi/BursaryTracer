@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BursaryTracer.Domain.Entities;
 using BursaryTracer.Domain.StatesFolder;
 using BursaryTracer.Services;
 using Microsoft.AspNetCore.Mvc;

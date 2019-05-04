@@ -1,5 +1,6 @@
 ﻿using BursaryTracer.Data;
 using BursaryTracer.Domain;
+using BursaryTracer.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,12 +28,9 @@ namespace BursaryTracer.Services
                 return _context.States.Include(options => options.Governors)
                     .Include(p => p.Schools)
                     .Include(c => c.Cities)
-                    .Where(s => s.Id == Id).FirstOrDefault(/*o => o.Id == Id*/);
+                    .Where(s => s.Id == Id).FirstOrDefault();
             }
-            //if (IncludeSchoolList)
-            //{
-            //    return _context.States.Include(options => options.Schools).Where(s => s.Id == Id).FirstOrDefault(/*o => o.Id == Id*/);
-            //}
+
             return _context.States.Where(o => o.Id == Id).FirstOrDefault();
         }
 
@@ -60,7 +58,7 @@ namespace BursaryTracer.Services
         {
             if (IncludeCourseList)
             {
-                return _context.Faculties.Include(options => options.Courses).Where(s => s.Id == Id).FirstOrDefault(/*o => o.Id == Id*/);
+                return _context.Faculties.Include(options => options.Courses).Where(s => s.Id == Id).FirstOrDefault();
             }
             return _context.Faculties.Where(o => o.Id == Id).FirstOrDefault();
         }
@@ -125,6 +123,12 @@ namespace BursaryTracer.Services
                      .FirstOrDefault();
             }
             return _context.States.Where(o => o.Id == Id).FirstOrDefault();
+        }
+
+        public Faculty GetFacultyWithCourseList(int Id)
+        {
+            return _context.Faculties.Include(options => options.Courses)
+                .Where(f => f.Id == Id).FirstOrDefault();
         }
     }
 }

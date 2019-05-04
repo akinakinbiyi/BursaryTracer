@@ -1,4 +1,4 @@
-﻿using BursaryTracer.Domain;
+﻿using BursaryTracer.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -39,14 +39,21 @@ namespace BursaryTracer.Data
             var governors = JsonConvert.DeserializeObject<IEnumerable<Governor>>(File.ReadAllText(filepath + "Governor.json"));
             var faculty = JsonConvert.DeserializeObject<IEnumerable<Faculty>>(File.ReadAllText(filepath + "Faculty.json"));
             var course = JsonConvert.DeserializeObject<IEnumerable<Course>>(File.ReadAllText(filepath + "Course.json"));
+            var student = JsonConvert.DeserializeObject<IEnumerable<Student>>(File.ReadAllText(filepath + "Students.json"));
 
-            //modelBuilder.Entity<State>().HasData(state);
+
             modelBuilder.Entity<City>().HasData(cities);
             modelBuilder.Entity<SchoolCategory>().HasData(schoolCategories);
-            //modelBuilder.Entity<School>().HasData(school);
-            //modelBuilder.Entity<Governor>().HasData(governors);
             modelBuilder.Entity<Faculty>().HasData(faculty);
             modelBuilder.Entity<Course>().HasData(course);
+
+            modelBuilder.Entity<Student>(s => {
+                s.HasData(student);
+                //s.HasOne(c => c.State).WithMany(t => t.Students).OnDelete(DeleteBehavior.SetNull);
+            });
+
+            //modelBuilder.Entity<Student>().HasOne(s=>s.Course).WithMany(c=>c.Students);
+
 
             modelBuilder.Entity<School>(s =>
             {
@@ -58,7 +65,7 @@ namespace BursaryTracer.Data
             {
                 s.HasData(state);
                 s.HasMany(g => g.Governors);
-                //s.HasOne(g => g.Governors);
+                s.HasMany(st => st.Students);
             });
 
             modelBuilder.Entity<Governor>(g =>
@@ -67,8 +74,13 @@ namespace BursaryTracer.Data
                 g.HasOne(s => s.State).WithMany(sg => sg.Governors).HasForeignKey(s => s.StateId);
             });
 
-            //Relatonships
-            //modelBuilder.Entity<State>().HasMany(g => g.Governors);
+            ////modelBuilder.Entity<Student>(s =>
+            ////{
+            ////    //s.HasOne(o => o.State).WithMany(st=> st.Students)/*.OnDelete(DeleteBehavior.SetNull)*/;
+            ////    s.HasOne(o => o.School).WithMany(st => st.Students);
+            ////    s.HasOne(o => o.Course).WithMany(st => st.Students);
+
+            //});
         }
     }
 }

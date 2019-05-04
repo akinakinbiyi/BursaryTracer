@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BursaryTracer.Domain
+namespace BursaryTracer.Domain.Entities
 {
     public class School
     {
@@ -19,5 +19,6 @@ namespace BursaryTracer.Domain
 
         public int SchoolCategoryId { get; set; }
         public ICollection<Faculty> Faculties { get; set; }
+        public ICollection<Student>  Students { get; set; }
     }
 }

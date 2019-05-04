@@ -1,4 +1,5 @@
 ﻿using BursaryTracer.Domain;
+using BursaryTracer.Domain.Entities;
 using System.Collections.Generic;
 
 namespace BursaryTracer.Services
@@ -25,6 +26,8 @@ namespace BursaryTracer.Services
         IEnumerable<Faculty> GetFaculties();
 
         Faculty GetFaculty(int Id, bool IncludeCourseList);
+        Faculty GetFacultyWithCourseList(int Id);
+
 
         ///Schools
         ///

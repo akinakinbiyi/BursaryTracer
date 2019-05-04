@@ -5,13 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20190430024141_State2Governors.cs" />
-    <Compile Remove="Migrations\20190430033227_State2Governors.cs" />
-    <Compile Remove="Migrations\20190430034012_State2Governors.cs" />
-    <Compile Remove="Migrations\20190430034633_State2Governors.cs" />
-    <Compile Remove="Migrations\20190430045244_State2Governor.cs" />
-    <Compile Remove="Migrations\20190430050641_State2Governor.cs" />
-    <Compile Remove="Migrations\20190430050804_State2Governor.cs" />
+    <Compile Remove="Migrations\20190503024402_StartNew.cs" />
+    <Compile Remove="Migrations\20190503024502_StartNew.cs" />
+    <Compile Remove="Migrations\20190503024815_StartNew.cs" />
+    <Compile Remove="Migrations\20190503025105_StartNew.cs" />
+    <Compile Remove="Migrations\20190503040242_StartNew.cs" />
+    <Compile Remove="Migrations\20190503042724_StartNew.cs" />
+    <Compile Remove="Migrations\20190503043637_StartNew.cs" />
+    <Compile Remove="Migrations\20190503044952_StartNew.cs" />
+    <Compile Remove="Migrations\20190503045308_StartNew.cs" />
+    <Compile Remove="Migrations\20190503045524_StartNew.cs" />
+    <Compile Remove="Migrations\20190503045742_StartNew.cs" />
+    <Compile Remove="Migrations\20190503045854_StartNew.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,7 +25,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace BursaryTracer.Data.Migrations
 {
-    public partial class School2Faculty : Migration
+    public partial class StartNew : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -111,7 +111,6 @@ namespace BursaryTracer.Data.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(nullable: true),
-                    CourseId = table.Column<int>(nullable: false),
                     SchoolId = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -154,9 +153,12 @@ namespace BursaryTracer.Data.Migrations
                     FirstName = table.Column<string>(nullable: true),
                     MiddleName = table.Column<string>(nullable: true),
                     Surname = table.Column<string>(nullable: true),
-                    StateId = table.Column<int>(nullable: false),
+                    Age = table.Column<string>(nullable: true),
+                    Gender = table.Column<string>(nullable: true),
+                    StateId = table.Column<int>(nullable: true),
                     CourseId = table.Column<int>(nullable: false),
-                    Amount = table.Column<double>(nullable: false)
+                    Amount = table.Column<string>(nullable: true),
+                    SchoolId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -168,30 +170,36 @@ namespace BursaryTracer.Data.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
+                        name: "FK_Students_Schools_SchoolId",
+                        column: x => x.SchoolId,
+                        principalTable: "Schools",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_Students_States_StateId",
                         column: x => x.StateId,
                         principalTable: "States",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.InsertData(
                 table: "Faculties",
-                columns: new[] { "Id", "CourseId", "Name", "SchoolId" },
+                columns: new[] { "Id", "Name", "SchoolId" },
                 values: new object[,]
                 {
-                    { 1, 0, "Faculty of Agriculture", null },
-                    { 12, 0, "Faculty of Pharmaceutical Sciences", null },
-                    { 10, 0, "Faculty of Veterinary Medicine", null },
-                    { 9, 0, "Faculty of Law", null },
-                    { 8, 0, "Faculty of Science and Technology", null },
-                    { 7, 0, "Faculty of Engineering", null },
-                    { 11, 0, "Faculty of Biological Sciences", null },
-                    { 5, 0, "Faculty of Education", null },
-                    { 4, 0, "Faculty of Business Administration", null },
-                    { 3, 0, "Faculty of Medical Sciences", null },
-                    { 2, 0, "Faculty of Arts", null },
-                    { 6, 0, "Faculty of Social Sciences", null }
+                    { 1, "Faculty of Agriculture", null },
+                    { 12, "Faculty of Pharmaceutical Sciences", null },
+                    { 10, "Faculty of Veterinary Medicine", null },
+                    { 9, "Faculty of Law", null },
+                    { 8, "Faculty of Science and Technology", null },
+                    { 7, "Faculty of Engineering", null },
+                    { 11, "Faculty of Biological Sciences", null },
+                    { 5, "Faculty of Education", null },
+                    { 4, "Faculty of Business Administration", null },
+                    { 3, "Faculty of Medical Sciences", null },
+                    { 2, "Faculty of Arts", null },
+                    { 6, "Faculty of Social Sciences", null }
                 });
 
             migrationBuilder.InsertData(
@@ -1460,6 +1468,119 @@ namespace BursaryTracer.Data.Migrations
                     { 67, "", "Dorben Polytechnic", 2, 37 }
                 });
 
+            migrationBuilder.InsertData(
+                table: "Students",
+                columns: new[] { "Id", "Age", "Amount", "CourseId", "FirstName", "Gender", "MiddleName", "SchoolId", "StateId", "Surname" },
+                values: new object[,]
+                {
+                    { 1, "22", "53456", 1, "Samuel", "Male", "Ade", 1, 1, "Badejo" },
+                    { 66, null, null, 2, "William", "Female", "", 26, 13, "adenira" },
+                    { 26, "22", null, 26, "Margaret", "Female", "", 26, 5, "Williams" },
+                    { 106, null, null, 42, "Adeola", "Male", "", 25, 19, "Adefimihan" },
+                    { 65, null, null, 1, "Ashimedua", "Male", "", 25, 13, "KINKSTON" },
+                    { 25, "21", null, 25, "Mercy", "Male", "", 25, 5, "Paul" },
+                    { 105, null, null, 41, "Anie", "Male", "", 24, 18, "Modestus" },
+                    { 64, null, null, 64, "Akon", "Female", "", 24, 13, "muiz" },
+                    { 24, "27", null, 24, "Promise", "Female", "", 24, 5, "azeez" },
+                    { 104, null, null, 40, "zainab", "Female", "", 23, 18, "Kenneth" },
+                    { 63, null, null, 63, "Grace", "Male", "", 23, 12, "johnson" },
+                    { 27, "23", null, 27, "Victoria", "Male", "", 27, 6, "joseph" },
+                    { 23, "28", null, 23, "Jennifer", "Male", "", 23, 5, "david" },
+                    { 62, null, null, 62, "Temitope", "Female", "", 22, 12, "CHRISTIAN" },
+                    { 22, "26", null, 22, "Hellen", "Female", "", 22, 5, "stephen" },
+                    { 102, null, null, 38, "Perfect", "Female", "", 21, 18, "holamide" },
+                    { 61, null, null, 61, "jannybliss", "Male", "", 21, 12, "jonah" },
+                    { 21, "24", null, 21, "Vivian", "Male", "", 21, 5, "daniel" },
+                    { 101, null, null, 37, "milcah", "Male", "", 20, 18, "oye" },
+                    { 60, null, null, 60, "AMANDA", "Female", "", 20, 12, "ebenezer" },
+                    { 20, "19", null, 20, "Queen", "Female", "", 20, 5, "IDRIS" },
+                    { 100, null, null, 36, "DIVINE", "Female", "", 19, 18, "Dickson" },
+                    { 59, null, null, 59, "Adah", "Male", "", 19, 12, "israel" },
+                    { 103, null, null, 39, "ubong", "Male", "", 22, 18, "Quayum" },
+                    { 67, null, null, 3, "Oluwakemi Blessing", "Male", "", 27, 13, "essien saviour" },
+                    { 28, "24", null, 28, "Ayomide", "Female", "", 28, 6, "Charles" },
+                    { 68, null, null, 4, "Peace", "Female", "", 28, 13, "Desmond" },
+                    { 40, null, null, 40, "vera", "Female", "", 40, 9, "Adewale" },
+                    { 79, null, null, 15, "Kay", "Male", "", 39, 15, "Toluwalase" },
+                    { 39, null, null, 39, "binitubo", "Male", "", 39, 9, "ADEKAnMBI" },
+                    { 78, null, null, 14, "Damilola", "Female", "", 38, 14, "Ayobami" },
+                    { 38, "29", null, 38, "olivia", "Female", "", 38, 8, "sheriff" },
+                    { 77, null, null, 13, "jovi", "Male", "", 37, 14, "ADESIYAN" },
+                    { 37, "24", null, 37, "devine", "Male", "", 37, 8, "patrick" },
+                    { 76, null, null, 12, "Sherifat", "Female", "", 36, 14, "Kaboure" },
+                    { 36, "26", null, 36, "maria", "Female", "", 36, 8, "Joshua" },
+                    { 75, null, null, 11, "claire", "Male", "", 35, 14, "Jibrin" },
+                    { 35, "23", null, 35, "kemi", "Male", "", 35, 8, "George" },
+                    { 74, null, null, 10, "Rahama", "Female", "", 34, 14, "adetunji" },
+                    { 34, "22", null, 34, "dorcas", "Female", "", 34, 8, "sodiq" },
+                    { 73, null, null, 9, "Bertina", "Male", "", 33, 14, "olowu" },
+                    { 33, "18", null, 33, "olabisi", "Male", "", 33, 8, "Raphael" },
+                    { 72, null, null, 8, "velma", "Female", "", 32, 14, "Dean" },
+                    { 32, "19", null, 32, "jessica", "Female", "", 32, 6, "Miracle" },
+                    { 71, null, null, 7, "Dami", "Male", "", 31, 13, "Torbem" },
+                    { 31, "29", null, 31, "Stella", "Male", "", 31, 6, "chidi" },
+                    { 70, null, null, 6, "Marvellous", "Female", "", 30, 13, "Hassan" },
+                    { 30, "28", null, 30, "Melody", "Female", "", 30, 6, "Richard" },
+                    { 69, null, null, 5, "britney", "Male", "", 29, 13, "Thad" },
+                    { 29, "22", null, 29, "Diana", "Male", "", 29, 6, "promise" },
+                    { 19, "29", null, 19, "Maris", "Male", "", 19, 4, "kelvin" },
+                    { 99, null, null, 35, "Molly", "Male", "", 18, 17, "Onyeka" },
+                    { 58, null, null, 58, "barbra", "Female", "", 18, 12, "Nosa" },
+                    { 18, "24", null, 18, "chinelo", "Female", "", 18, 4, "Gabriel" },
+                    { 89, null, null, 25, "ajigbotoso", "Male", "", 8, 16, "Bezaleel" },
+                    { 48, null, null, 48, "pink", "Female", "", 8, 10, "alex" },
+                    { 8, "27", "98654", 8, "Joy", "Female", "", 8, 2, "michael" },
+                    { 88, null, null, 24, "rhamat", "Female", "", 7, 16, "Ben" },
+                    { 47, null, null, 47, "Rita", "Male", "", 7, 10, "Austin" },
+                    { 7, "28", "69354", 7, "Esther", "Male", "", 7, 2, "Emmanuel" },
+                    { 87, null, null, 23, "sussan", "Male", "", 6, 16, "Abdulkarim" },
+                    { 46, null, null, 46, "Rachael", "Female", "", 6, 10, "Godwin" },
+                    { 6, "26", "87546", 6, "Quadri", "Female", "", 6, 2, "Babagana" },
+                    { 86, null, null, 22, "Martins", "Female", "", 5, 16, "Clinton" },
+                    { 45, null, null, 45, "MinRee", "Male", "", 5, 10, "vincent" },
+                    { 5, "21", "15984", 5, "Ngozi", "Male", "Doris", 5, 2, "Atagana" },
+                    { 85, null, null, 21, "Cynthia", "Male", "", 4, 15, "Chukwunenye" },
+                    { 44, null, null, 44, "Emmanuel Deborah", "Female", "", 4, 9, "Alvin" },
+                    { 4, "28", "32654", 4, "Chukwuma", "Female", "Samuel", 4, 1, "Odinkalu" },
+                    { 84, null, null, 20, "Chinasa", "Female", "", 3, 15, "Tochi" },
+                    { 43, null, null, 43, "Sonia emmanuel", "Male", "", 3, 9, "Gideon" },
+                    { 3, "19", "75462", 3, "Akindele", "Male", "O.", 3, 1, "Ajenifuja" },
+                    { 83, null, null, 19, "Mariam", "Male", "", 2, 15, "olaite" },
+                    { 42, null, null, 42, "lizzy", "Female", "", 2, 9, "kenny" },
+                    { 2, "23", "25465", 2, "Ahmed", "Female", "Musa", 2, 1, "Muse" },
+                    { 82, null, null, 18, "Olive", "Female", "", 1, 15, "Nagga" },
+                    { 41, null, null, 41, "Wendy", "Male", "", 1, 9, "MICHEAL" },
+                    { 9, "19", "35478", 9, "ABIGAIL", "Male", "", 9, 2, "Victor" },
+                    { 80, null, null, 16, "hanson", "Female", "", 40, 15, "blaise" },
+                    { 49, null, null, 49, "Gloria", "Male", "", 9, 10, "Walter" },
+                    { 10, "31", "95475", 10, "Rose", "Female", "", 10, 3, "Samuel" },
+                    { 98, null, null, 34, "Joke", "Female", "", 17, 17, "Wakajawaka Shashaq" },
+                    { 57, null, null, 57, "Hadassah", "Male", "", 17, 12, "kela" },
+                    { 17, "25", null, 17, "Mary", "Male", "", 17, 4, "Benjamin" },
+                    { 97, null, null, 33, "S.star", "Male", "", 16, 17, "gebstar" },
+                    { 56, null, null, 56, "olayemi", "Female", "", 16, 11, "cammy" },
+                    { 16, "32", null, 16, "Redeem", "Female", "", 16, 4, "Solomon" },
+                    { 96, null, null, 32, "Yisabella Ekwealor", "Female", "", 15, 17, "C. Geraldo" },
+                    { 55, null, null, 55, "Enora", "Male", "", 15, 11, "Francis" },
+                    { 15, "30", null, 15, "Kebe", "Male", "", 15, 4, "john" },
+                    { 95, null, null, 31, "Hikmat", "Male", "", 14, 17, "Tope" },
+                    { 54, null, null, 54, "Adella", "Female", "", 14, 11, "Handsome" },
+                    { 14, "18", null, 14, "precious", "Female", "", 14, 3, "Isaac" },
+                    { 94, null, null, 30, "Kel", "Female", "", 13, 17, "Olaniyi" },
+                    { 53, null, null, 53, "Phoebe", "Male", "", 13, 11, "jude" },
+                    { 13, "23", "13524", 13, "Blessing", "Male", "", 13, 3, "kingsley" },
+                    { 93, null, null, 29, "anthonia", "Male", "", 12, 17, "ALFRED" },
+                    { 52, null, null, 52, "Oputa", "Female", "", 12, 11, "Franklin" },
+                    { 12, "24", "75025", 12, "favour", "Female", "", 12, 3, "sam" },
+                    { 92, null, null, 28, "Diepreye", "Female", "", 11, 16, "Emmi" },
+                    { 51, null, null, 51, "Enny", "Male", "", 11, 11, "Verse" },
+                    { 11, "19", "105245", 11, "Stephanie", "Male", "", 11, 3, "peter" },
+                    { 91, null, null, 27, "rosemary", "Male", "", 10, 16, "Ahmad" },
+                    { 50, null, null, 50, "Nzube", "Female", "", 10, 10, "Simon" },
+                    { 90, null, null, 26, "owoeye", "Female", "", 9, 16, "Ralph" },
+                    { 81, null, null, 17, "Bola", "Male", "", 41, 15, "mubaraq" }
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Cities_StateId",
                 table: "Cities",
@@ -1494,6 +1615,11 @@ namespace BursaryTracer.Data.Migrations
                 name: "IX_Students_CourseId",
                 table: "Students",
                 column: "CourseId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Students_SchoolId",
+                table: "Students",
+                column: "SchoolId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Students_StateId",

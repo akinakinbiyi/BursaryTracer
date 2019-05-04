@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BursaryTracer.Domain
+namespace BursaryTracer.Domain.Entities
 {
     public class State
     {
@@ -13,6 +13,5 @@ namespace BursaryTracer.Domain
 
         public ICollection<Governor> Governors { get; set; }
         public ICollection<Student>  Students { get; set; }
-
     }
 }

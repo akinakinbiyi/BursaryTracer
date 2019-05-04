@@ -1,5 +1,6 @@
 ﻿using BursaryTracer.Data;
 using BursaryTracer.Domain;
+using BursaryTracer.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;

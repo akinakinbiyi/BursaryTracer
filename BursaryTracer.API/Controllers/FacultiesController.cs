@@ -50,6 +50,21 @@ namespace BursaryTracer.API.Controllers
             return Ok(facaultyWithoutCourseListResults);
         }
 
+        // GET: api/Faculties/5/Courses
+        [HttpGet("{Id}/Courses", Name = "GetFacultyWithCourseList")]
+        public IActionResult GetFacultyWithCourseList(int Id)
+        {
+            var facultyEntitiy = repository.GetFacultyWithCourseList(Id);
+
+            if (facultyEntitiy == null)
+            {
+                return NotFound();
+            }
+
+            var results = Mapper.Map<FacaultyDto>(facultyEntitiy);
+            return Ok(results);
+        }
+
         //// PUT: api/Faculties/5
         //[HttpPut("{id}")]
         //public async Task<IActionResult> PutFaculty(int id, Faculty faculty)

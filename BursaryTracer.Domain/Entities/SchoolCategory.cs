@@ -1,4 +1,4 @@
-﻿namespace BursaryTracer.Domain
+﻿namespace BursaryTracer.Domain.Entities
 {
     public class SchoolCategory
     {

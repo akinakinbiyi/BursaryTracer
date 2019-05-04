@@ -19,7 +19,7 @@ namespace BursaryTracer.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("BursaryTracer.Domain.City", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.City", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -4742,7 +4742,7 @@ namespace BursaryTracer.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.Course", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.Course", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -5145,13 +5145,11 @@ namespace BursaryTracer.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.Faculty", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.Faculty", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<int>("CourseId");
 
                     b.Property<string>("Name");
 
@@ -5167,78 +5165,66 @@ namespace BursaryTracer.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CourseId = 0,
                             Name = "Faculty of Agriculture"
                         },
                         new
                         {
                             Id = 2,
-                            CourseId = 0,
                             Name = "Faculty of Arts"
                         },
                         new
                         {
                             Id = 3,
-                            CourseId = 0,
                             Name = "Faculty of Medical Sciences"
                         },
                         new
                         {
                             Id = 4,
-                            CourseId = 0,
                             Name = "Faculty of Business Administration"
                         },
                         new
                         {
                             Id = 5,
-                            CourseId = 0,
                             Name = "Faculty of Education"
                         },
                         new
                         {
                             Id = 6,
-                            CourseId = 0,
                             Name = "Faculty of Social Sciences"
                         },
                         new
                         {
                             Id = 7,
-                            CourseId = 0,
                             Name = "Faculty of Engineering"
                         },
                         new
                         {
                             Id = 8,
-                            CourseId = 0,
                             Name = "Faculty of Science and Technology"
                         },
                         new
                         {
                             Id = 9,
-                            CourseId = 0,
                             Name = "Faculty of Law"
                         },
                         new
                         {
                             Id = 10,
-                            CourseId = 0,
                             Name = "Faculty of Veterinary Medicine"
                         },
                         new
                         {
                             Id = 11,
-                            CourseId = 0,
                             Name = "Faculty of Biological Sciences"
                         },
                         new
                         {
                             Id = 12,
-                            CourseId = 0,
                             Name = "Faculty of Pharmaceutical Sciences"
                         });
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.Governor", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.Governor", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -6437,7 +6423,7 @@ namespace BursaryTracer.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.School", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.School", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -7918,7 +7904,7 @@ namespace BursaryTracer.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.SchoolCategory", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.SchoolCategory", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -7948,7 +7934,7 @@ namespace BursaryTracer.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.State", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.State", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -8187,21 +8173,27 @@ namespace BursaryTracer.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.Student", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.Student", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<double>("Amount");
+                    b.Property<string>("Age");
+
+                    b.Property<string>("Amount");
 
                     b.Property<int>("CourseId");
 
                     b.Property<string>("FirstName");
 
+                    b.Property<string>("Gender");
+
                     b.Property<string>("MiddleName");
 
-                    b.Property<int>("StateId");
+                    b.Property<int>("SchoolId");
+
+                    b.Property<int?>("StateId");
 
                     b.Property<string>("Surname");
 
@@ -8209,66 +8201,1291 @@ namespace BursaryTracer.Data.Migrations
 
                     b.HasIndex("CourseId");
 
+                    b.HasIndex("SchoolId");
+
                     b.HasIndex("StateId");
 
                     b.ToTable("Students");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Age = "22",
+                            Amount = "53456",
+                            CourseId = 1,
+                            FirstName = "Samuel",
+                            Gender = "Male",
+                            MiddleName = "Ade",
+                            SchoolId = 1,
+                            StateId = 1,
+                            Surname = "Badejo"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Age = "23",
+                            Amount = "25465",
+                            CourseId = 2,
+                            FirstName = "Ahmed",
+                            Gender = "Female",
+                            MiddleName = "Musa",
+                            SchoolId = 2,
+                            StateId = 1,
+                            Surname = "Muse"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Age = "19",
+                            Amount = "75462",
+                            CourseId = 3,
+                            FirstName = "Akindele",
+                            Gender = "Male",
+                            MiddleName = "O.",
+                            SchoolId = 3,
+                            StateId = 1,
+                            Surname = "Ajenifuja"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Age = "28",
+                            Amount = "32654",
+                            CourseId = 4,
+                            FirstName = "Chukwuma",
+                            Gender = "Female",
+                            MiddleName = "Samuel",
+                            SchoolId = 4,
+                            StateId = 1,
+                            Surname = "Odinkalu"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Age = "21",
+                            Amount = "15984",
+                            CourseId = 5,
+                            FirstName = "Ngozi",
+                            Gender = "Male",
+                            MiddleName = "Doris",
+                            SchoolId = 5,
+                            StateId = 2,
+                            Surname = "Atagana"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Age = "26",
+                            Amount = "87546",
+                            CourseId = 6,
+                            FirstName = "Quadri",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 6,
+                            StateId = 2,
+                            Surname = "Babagana"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Age = "28",
+                            Amount = "69354",
+                            CourseId = 7,
+                            FirstName = "Esther",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 7,
+                            StateId = 2,
+                            Surname = "Emmanuel"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Age = "27",
+                            Amount = "98654",
+                            CourseId = 8,
+                            FirstName = "Joy",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 8,
+                            StateId = 2,
+                            Surname = "michael"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Age = "19",
+                            Amount = "35478",
+                            CourseId = 9,
+                            FirstName = "ABIGAIL",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 9,
+                            StateId = 2,
+                            Surname = "Victor"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Age = "31",
+                            Amount = "95475",
+                            CourseId = 10,
+                            FirstName = "Rose",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 10,
+                            StateId = 3,
+                            Surname = "Samuel"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Age = "19",
+                            Amount = "105245",
+                            CourseId = 11,
+                            FirstName = "Stephanie",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 11,
+                            StateId = 3,
+                            Surname = "peter"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Age = "24",
+                            Amount = "75025",
+                            CourseId = 12,
+                            FirstName = "favour",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 12,
+                            StateId = 3,
+                            Surname = "sam"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Age = "23",
+                            Amount = "13524",
+                            CourseId = 13,
+                            FirstName = "Blessing",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 13,
+                            StateId = 3,
+                            Surname = "kingsley"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Age = "18",
+                            CourseId = 14,
+                            FirstName = "precious",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 14,
+                            StateId = 3,
+                            Surname = "Isaac"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Age = "30",
+                            CourseId = 15,
+                            FirstName = "Kebe",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 15,
+                            StateId = 4,
+                            Surname = "john"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Age = "32",
+                            CourseId = 16,
+                            FirstName = "Redeem",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 16,
+                            StateId = 4,
+                            Surname = "Solomon"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Age = "25",
+                            CourseId = 17,
+                            FirstName = "Mary",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 17,
+                            StateId = 4,
+                            Surname = "Benjamin"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Age = "24",
+                            CourseId = 18,
+                            FirstName = "chinelo",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 18,
+                            StateId = 4,
+                            Surname = "Gabriel"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Age = "29",
+                            CourseId = 19,
+                            FirstName = "Maris",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 19,
+                            StateId = 4,
+                            Surname = "kelvin"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Age = "19",
+                            CourseId = 20,
+                            FirstName = "Queen",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 20,
+                            StateId = 5,
+                            Surname = "IDRIS"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Age = "24",
+                            CourseId = 21,
+                            FirstName = "Vivian",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 21,
+                            StateId = 5,
+                            Surname = "daniel"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Age = "26",
+                            CourseId = 22,
+                            FirstName = "Hellen",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 22,
+                            StateId = 5,
+                            Surname = "stephen"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Age = "28",
+                            CourseId = 23,
+                            FirstName = "Jennifer",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 23,
+                            StateId = 5,
+                            Surname = "david"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            Age = "27",
+                            CourseId = 24,
+                            FirstName = "Promise",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 24,
+                            StateId = 5,
+                            Surname = "azeez"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            Age = "21",
+                            CourseId = 25,
+                            FirstName = "Mercy",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 25,
+                            StateId = 5,
+                            Surname = "Paul"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            Age = "22",
+                            CourseId = 26,
+                            FirstName = "Margaret",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 26,
+                            StateId = 5,
+                            Surname = "Williams"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            Age = "23",
+                            CourseId = 27,
+                            FirstName = "Victoria",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 27,
+                            StateId = 6,
+                            Surname = "joseph"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            Age = "24",
+                            CourseId = 28,
+                            FirstName = "Ayomide",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 28,
+                            StateId = 6,
+                            Surname = "Charles"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            Age = "22",
+                            CourseId = 29,
+                            FirstName = "Diana",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 29,
+                            StateId = 6,
+                            Surname = "promise"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            Age = "28",
+                            CourseId = 30,
+                            FirstName = "Melody",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 30,
+                            StateId = 6,
+                            Surname = "Richard"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            Age = "29",
+                            CourseId = 31,
+                            FirstName = "Stella",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 31,
+                            StateId = 6,
+                            Surname = "chidi"
+                        },
+                        new
+                        {
+                            Id = 32,
+                            Age = "19",
+                            CourseId = 32,
+                            FirstName = "jessica",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 32,
+                            StateId = 6,
+                            Surname = "Miracle"
+                        },
+                        new
+                        {
+                            Id = 33,
+                            Age = "18",
+                            CourseId = 33,
+                            FirstName = "olabisi",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 33,
+                            StateId = 8,
+                            Surname = "Raphael"
+                        },
+                        new
+                        {
+                            Id = 34,
+                            Age = "22",
+                            CourseId = 34,
+                            FirstName = "dorcas",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 34,
+                            StateId = 8,
+                            Surname = "sodiq"
+                        },
+                        new
+                        {
+                            Id = 35,
+                            Age = "23",
+                            CourseId = 35,
+                            FirstName = "kemi",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 35,
+                            StateId = 8,
+                            Surname = "George"
+                        },
+                        new
+                        {
+                            Id = 36,
+                            Age = "26",
+                            CourseId = 36,
+                            FirstName = "maria",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 36,
+                            StateId = 8,
+                            Surname = "Joshua"
+                        },
+                        new
+                        {
+                            Id = 37,
+                            Age = "24",
+                            CourseId = 37,
+                            FirstName = "devine",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 37,
+                            StateId = 8,
+                            Surname = "patrick"
+                        },
+                        new
+                        {
+                            Id = 38,
+                            Age = "29",
+                            CourseId = 38,
+                            FirstName = "olivia",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 38,
+                            StateId = 8,
+                            Surname = "sheriff"
+                        },
+                        new
+                        {
+                            Id = 39,
+                            CourseId = 39,
+                            FirstName = "binitubo",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 39,
+                            StateId = 9,
+                            Surname = "ADEKAnMBI"
+                        },
+                        new
+                        {
+                            Id = 40,
+                            CourseId = 40,
+                            FirstName = "vera",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 40,
+                            StateId = 9,
+                            Surname = "Adewale"
+                        },
+                        new
+                        {
+                            Id = 41,
+                            CourseId = 41,
+                            FirstName = "Wendy",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 1,
+                            StateId = 9,
+                            Surname = "MICHEAL"
+                        },
+                        new
+                        {
+                            Id = 42,
+                            CourseId = 42,
+                            FirstName = "lizzy",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 2,
+                            StateId = 9,
+                            Surname = "kenny"
+                        },
+                        new
+                        {
+                            Id = 43,
+                            CourseId = 43,
+                            FirstName = "Sonia emmanuel",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 3,
+                            StateId = 9,
+                            Surname = "Gideon"
+                        },
+                        new
+                        {
+                            Id = 44,
+                            CourseId = 44,
+                            FirstName = "Emmanuel Deborah",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 4,
+                            StateId = 9,
+                            Surname = "Alvin"
+                        },
+                        new
+                        {
+                            Id = 45,
+                            CourseId = 45,
+                            FirstName = "MinRee",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 5,
+                            StateId = 10,
+                            Surname = "vincent"
+                        },
+                        new
+                        {
+                            Id = 46,
+                            CourseId = 46,
+                            FirstName = "Rachael",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 6,
+                            StateId = 10,
+                            Surname = "Godwin"
+                        },
+                        new
+                        {
+                            Id = 47,
+                            CourseId = 47,
+                            FirstName = "Rita",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 7,
+                            StateId = 10,
+                            Surname = "Austin"
+                        },
+                        new
+                        {
+                            Id = 48,
+                            CourseId = 48,
+                            FirstName = "pink",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 8,
+                            StateId = 10,
+                            Surname = "alex"
+                        },
+                        new
+                        {
+                            Id = 49,
+                            CourseId = 49,
+                            FirstName = "Gloria",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 9,
+                            StateId = 10,
+                            Surname = "Walter"
+                        },
+                        new
+                        {
+                            Id = 50,
+                            CourseId = 50,
+                            FirstName = "Nzube",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 10,
+                            StateId = 10,
+                            Surname = "Simon"
+                        },
+                        new
+                        {
+                            Id = 51,
+                            CourseId = 51,
+                            FirstName = "Enny",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 11,
+                            StateId = 11,
+                            Surname = "Verse"
+                        },
+                        new
+                        {
+                            Id = 52,
+                            CourseId = 52,
+                            FirstName = "Oputa",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 12,
+                            StateId = 11,
+                            Surname = "Franklin"
+                        },
+                        new
+                        {
+                            Id = 53,
+                            CourseId = 53,
+                            FirstName = "Phoebe",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 13,
+                            StateId = 11,
+                            Surname = "jude"
+                        },
+                        new
+                        {
+                            Id = 54,
+                            CourseId = 54,
+                            FirstName = "Adella",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 14,
+                            StateId = 11,
+                            Surname = "Handsome"
+                        },
+                        new
+                        {
+                            Id = 55,
+                            CourseId = 55,
+                            FirstName = "Enora",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 15,
+                            StateId = 11,
+                            Surname = "Francis"
+                        },
+                        new
+                        {
+                            Id = 56,
+                            CourseId = 56,
+                            FirstName = "olayemi",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 16,
+                            StateId = 11,
+                            Surname = "cammy"
+                        },
+                        new
+                        {
+                            Id = 57,
+                            CourseId = 57,
+                            FirstName = "Hadassah",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 17,
+                            StateId = 12,
+                            Surname = "kela"
+                        },
+                        new
+                        {
+                            Id = 58,
+                            CourseId = 58,
+                            FirstName = "barbra",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 18,
+                            StateId = 12,
+                            Surname = "Nosa"
+                        },
+                        new
+                        {
+                            Id = 59,
+                            CourseId = 59,
+                            FirstName = "Adah",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 19,
+                            StateId = 12,
+                            Surname = "israel"
+                        },
+                        new
+                        {
+                            Id = 60,
+                            CourseId = 60,
+                            FirstName = "AMANDA",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 20,
+                            StateId = 12,
+                            Surname = "ebenezer"
+                        },
+                        new
+                        {
+                            Id = 61,
+                            CourseId = 61,
+                            FirstName = "jannybliss",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 21,
+                            StateId = 12,
+                            Surname = "jonah"
+                        },
+                        new
+                        {
+                            Id = 62,
+                            CourseId = 62,
+                            FirstName = "Temitope",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 22,
+                            StateId = 12,
+                            Surname = "CHRISTIAN"
+                        },
+                        new
+                        {
+                            Id = 63,
+                            CourseId = 63,
+                            FirstName = "Grace",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 23,
+                            StateId = 12,
+                            Surname = "johnson"
+                        },
+                        new
+                        {
+                            Id = 64,
+                            CourseId = 64,
+                            FirstName = "Akon",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 24,
+                            StateId = 13,
+                            Surname = "muiz"
+                        },
+                        new
+                        {
+                            Id = 65,
+                            CourseId = 1,
+                            FirstName = "Ashimedua",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 25,
+                            StateId = 13,
+                            Surname = "KINKSTON"
+                        },
+                        new
+                        {
+                            Id = 66,
+                            CourseId = 2,
+                            FirstName = "William",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 26,
+                            StateId = 13,
+                            Surname = "adenira"
+                        },
+                        new
+                        {
+                            Id = 67,
+                            CourseId = 3,
+                            FirstName = "Oluwakemi Blessing",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 27,
+                            StateId = 13,
+                            Surname = "essien saviour"
+                        },
+                        new
+                        {
+                            Id = 68,
+                            CourseId = 4,
+                            FirstName = "Peace",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 28,
+                            StateId = 13,
+                            Surname = "Desmond"
+                        },
+                        new
+                        {
+                            Id = 69,
+                            CourseId = 5,
+                            FirstName = "britney",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 29,
+                            StateId = 13,
+                            Surname = "Thad"
+                        },
+                        new
+                        {
+                            Id = 70,
+                            CourseId = 6,
+                            FirstName = "Marvellous",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 30,
+                            StateId = 13,
+                            Surname = "Hassan"
+                        },
+                        new
+                        {
+                            Id = 71,
+                            CourseId = 7,
+                            FirstName = "Dami",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 31,
+                            StateId = 13,
+                            Surname = "Torbem"
+                        },
+                        new
+                        {
+                            Id = 72,
+                            CourseId = 8,
+                            FirstName = "velma",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 32,
+                            StateId = 14,
+                            Surname = "Dean"
+                        },
+                        new
+                        {
+                            Id = 73,
+                            CourseId = 9,
+                            FirstName = "Bertina",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 33,
+                            StateId = 14,
+                            Surname = "olowu"
+                        },
+                        new
+                        {
+                            Id = 74,
+                            CourseId = 10,
+                            FirstName = "Rahama",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 34,
+                            StateId = 14,
+                            Surname = "adetunji"
+                        },
+                        new
+                        {
+                            Id = 75,
+                            CourseId = 11,
+                            FirstName = "claire",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 35,
+                            StateId = 14,
+                            Surname = "Jibrin"
+                        },
+                        new
+                        {
+                            Id = 76,
+                            CourseId = 12,
+                            FirstName = "Sherifat",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 36,
+                            StateId = 14,
+                            Surname = "Kaboure"
+                        },
+                        new
+                        {
+                            Id = 77,
+                            CourseId = 13,
+                            FirstName = "jovi",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 37,
+                            StateId = 14,
+                            Surname = "ADESIYAN"
+                        },
+                        new
+                        {
+                            Id = 78,
+                            CourseId = 14,
+                            FirstName = "Damilola",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 38,
+                            StateId = 14,
+                            Surname = "Ayobami"
+                        },
+                        new
+                        {
+                            Id = 79,
+                            CourseId = 15,
+                            FirstName = "Kay",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 39,
+                            StateId = 15,
+                            Surname = "Toluwalase"
+                        },
+                        new
+                        {
+                            Id = 80,
+                            CourseId = 16,
+                            FirstName = "hanson",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 40,
+                            StateId = 15,
+                            Surname = "blaise"
+                        },
+                        new
+                        {
+                            Id = 81,
+                            CourseId = 17,
+                            FirstName = "Bola",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 41,
+                            StateId = 15,
+                            Surname = "mubaraq"
+                        },
+                        new
+                        {
+                            Id = 82,
+                            CourseId = 18,
+                            FirstName = "Olive",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 1,
+                            StateId = 15,
+                            Surname = "Nagga"
+                        },
+                        new
+                        {
+                            Id = 83,
+                            CourseId = 19,
+                            FirstName = "Mariam",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 2,
+                            StateId = 15,
+                            Surname = "olaite"
+                        },
+                        new
+                        {
+                            Id = 84,
+                            CourseId = 20,
+                            FirstName = "Chinasa",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 3,
+                            StateId = 15,
+                            Surname = "Tochi"
+                        },
+                        new
+                        {
+                            Id = 85,
+                            CourseId = 21,
+                            FirstName = "Cynthia",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 4,
+                            StateId = 15,
+                            Surname = "Chukwunenye"
+                        },
+                        new
+                        {
+                            Id = 86,
+                            CourseId = 22,
+                            FirstName = "Martins",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 5,
+                            StateId = 16,
+                            Surname = "Clinton"
+                        },
+                        new
+                        {
+                            Id = 87,
+                            CourseId = 23,
+                            FirstName = "sussan",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 6,
+                            StateId = 16,
+                            Surname = "Abdulkarim"
+                        },
+                        new
+                        {
+                            Id = 88,
+                            CourseId = 24,
+                            FirstName = "rhamat",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 7,
+                            StateId = 16,
+                            Surname = "Ben"
+                        },
+                        new
+                        {
+                            Id = 89,
+                            CourseId = 25,
+                            FirstName = "ajigbotoso",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 8,
+                            StateId = 16,
+                            Surname = "Bezaleel"
+                        },
+                        new
+                        {
+                            Id = 90,
+                            CourseId = 26,
+                            FirstName = "owoeye",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 9,
+                            StateId = 16,
+                            Surname = "Ralph"
+                        },
+                        new
+                        {
+                            Id = 91,
+                            CourseId = 27,
+                            FirstName = "rosemary",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 10,
+                            StateId = 16,
+                            Surname = "Ahmad"
+                        },
+                        new
+                        {
+                            Id = 92,
+                            CourseId = 28,
+                            FirstName = "Diepreye",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 11,
+                            StateId = 16,
+                            Surname = "Emmi"
+                        },
+                        new
+                        {
+                            Id = 93,
+                            CourseId = 29,
+                            FirstName = "anthonia",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 12,
+                            StateId = 17,
+                            Surname = "ALFRED"
+                        },
+                        new
+                        {
+                            Id = 94,
+                            CourseId = 30,
+                            FirstName = "Kel",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 13,
+                            StateId = 17,
+                            Surname = "Olaniyi"
+                        },
+                        new
+                        {
+                            Id = 95,
+                            CourseId = 31,
+                            FirstName = "Hikmat",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 14,
+                            StateId = 17,
+                            Surname = "Tope"
+                        },
+                        new
+                        {
+                            Id = 96,
+                            CourseId = 32,
+                            FirstName = "Yisabella Ekwealor",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 15,
+                            StateId = 17,
+                            Surname = "C. Geraldo"
+                        },
+                        new
+                        {
+                            Id = 97,
+                            CourseId = 33,
+                            FirstName = "S.star",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 16,
+                            StateId = 17,
+                            Surname = "gebstar"
+                        },
+                        new
+                        {
+                            Id = 98,
+                            CourseId = 34,
+                            FirstName = "Joke",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 17,
+                            StateId = 17,
+                            Surname = "Wakajawaka Shashaq"
+                        },
+                        new
+                        {
+                            Id = 99,
+                            CourseId = 35,
+                            FirstName = "Molly",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 18,
+                            StateId = 17,
+                            Surname = "Onyeka"
+                        },
+                        new
+                        {
+                            Id = 100,
+                            CourseId = 36,
+                            FirstName = "DIVINE",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 19,
+                            StateId = 18,
+                            Surname = "Dickson"
+                        },
+                        new
+                        {
+                            Id = 101,
+                            CourseId = 37,
+                            FirstName = "milcah",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 20,
+                            StateId = 18,
+                            Surname = "oye"
+                        },
+                        new
+                        {
+                            Id = 102,
+                            CourseId = 38,
+                            FirstName = "Perfect",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 21,
+                            StateId = 18,
+                            Surname = "holamide"
+                        },
+                        new
+                        {
+                            Id = 103,
+                            CourseId = 39,
+                            FirstName = "ubong",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 22,
+                            StateId = 18,
+                            Surname = "Quayum"
+                        },
+                        new
+                        {
+                            Id = 104,
+                            CourseId = 40,
+                            FirstName = "zainab",
+                            Gender = "Female",
+                            MiddleName = "",
+                            SchoolId = 23,
+                            StateId = 18,
+                            Surname = "Kenneth"
+                        },
+                        new
+                        {
+                            Id = 105,
+                            CourseId = 41,
+                            FirstName = "Anie",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 24,
+                            StateId = 18,
+                            Surname = "Modestus"
+                        },
+                        new
+                        {
+                            Id = 106,
+                            CourseId = 42,
+                            FirstName = "Adeola",
+                            Gender = "Male",
+                            MiddleName = "",
+                            SchoolId = 25,
+                            StateId = 19,
+                            Surname = "Adefimihan"
+                        });
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.City", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.City", b =>
                 {
-                    b.HasOne("BursaryTracer.Domain.State", "State")
-                        .WithMany()
+                    b.HasOne("BursaryTracer.Domain.Entities.State", "State")
+                        .WithMany("Cities")
                         .HasForeignKey("StateId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.Course", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.Course", b =>
                 {
-                    b.HasOne("BursaryTracer.Domain.Faculty", "Faculty")
+                    b.HasOne("BursaryTracer.Domain.Entities.Faculty", "Faculty")
                         .WithMany("Courses")
                         .HasForeignKey("FacultyId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.Faculty", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.Faculty", b =>
                 {
-                    b.HasOne("BursaryTracer.Domain.School")
+                    b.HasOne("BursaryTracer.Domain.Entities.School")
                         .WithMany("Faculties")
                         .HasForeignKey("SchoolId");
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.Governor", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.Governor", b =>
                 {
-                    b.HasOne("BursaryTracer.Domain.State", "State")
+                    b.HasOne("BursaryTracer.Domain.Entities.State", "State")
                         .WithMany("Governors")
                         .HasForeignKey("StateId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.School", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.School", b =>
                 {
-                    b.HasOne("BursaryTracer.Domain.SchoolCategory", "SchoolCategory")
+                    b.HasOne("BursaryTracer.Domain.Entities.SchoolCategory", "SchoolCategory")
                         .WithMany()
                         .HasForeignKey("SchoolCategoryId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("BursaryTracer.Domain.State", "State")
+                    b.HasOne("BursaryTracer.Domain.Entities.State", "State")
                         .WithMany("Schools")
                         .HasForeignKey("StateId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("BursaryTracer.Domain.Student", b =>
+            modelBuilder.Entity("BursaryTracer.Domain.Entities.Student", b =>
                 {
-                    b.HasOne("BursaryTracer.Domain.Course", "Course")
-                        .WithMany()
+                    b.HasOne("BursaryTracer.Domain.Entities.Course", "Course")
+                        .WithMany("Students")
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("BursaryTracer.Domain.State", "State")
-                        .WithMany()
-                        .HasForeignKey("StateId")
+                    b.HasOne("BursaryTracer.Domain.Entities.School", "School")
+                        .WithMany("Students")
+                        .HasForeignKey("SchoolId")
                         .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("BursaryTracer.Domain.Entities.State", "State")
+                        .WithMany("Students")
+                        .HasForeignKey("StateId");
                 });
 #pragma warning restore 612, 618
         }

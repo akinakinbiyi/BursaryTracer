@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using BursaryTracer.Domain.Entities;
+using System.Collections.Generic;
 
 namespace BursaryTracer.Domain.StatesFolder
 {
