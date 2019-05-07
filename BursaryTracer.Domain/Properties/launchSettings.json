@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "BursaryTracer.Domain": {
+      "commandName": "Snapshot Debugger (Azure App Service)"
+    }
+  }
+}
