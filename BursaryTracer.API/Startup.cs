@@ -27,7 +27,7 @@ namespace BursaryTracer.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<BTDbContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("BursaryApiDatabase")));
+            options.UseSqlServer(Configuration.GetConnectionString("AzureBasedDB")));
 
             services.AddScoped<IServicesRepository, ServicesRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

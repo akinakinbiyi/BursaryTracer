@@ -21,11 +21,12 @@ namespace BursaryTracer.Data
         public DbSet<Course> Courses { get; set; }
         public DbSet<Student> Students { get; set; }
 
-        private readonly string MyServer = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BursaryTracerApiDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        //private readonly string MyServer = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=BursaryTracerApiDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        private readonly string AzureBasedDB = @"Server=tcp:myefcore.database.windows.net,1433;Initial Catalog=bursarytracer;Persist Security Info=False;User ID=techbridges;Password=@Dcomfort1!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(MyServer);
+            optionsBuilder.UseSqlServer(AzureBasedDB);
         }
 
         private readonly string filepath = @"C:\Trainings\BursaryTracer\BursaryTracer.Data\DataSeeders\";
