@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 
 namespace BursaryTracer.Data
 {
@@ -29,7 +30,9 @@ namespace BursaryTracer.Data
             optionsBuilder.UseSqlServer(AzureBasedDB);
         }
 
-        private readonly string filepath = @"C:\Trainings\BursaryTracer\BursaryTracer.Data\DataSeeders\";
+        //private readonly string filepath = @"C:\Trainings\BursaryTracer\BursaryTracer.Data\DataSeeders\";
+       private readonly string filepath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"DataSeeders\");
+        //string[] files = File.ReadAllLines(path);
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

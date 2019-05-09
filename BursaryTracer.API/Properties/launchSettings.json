@@ -28,6 +28,11 @@
     },
     "Snapshot Debugger (Azure App Service)": {
       "commandName": "Snapshot Debugger (Azure App Service)"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/values"
     }
   }
 }
